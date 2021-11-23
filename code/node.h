@@ -11,26 +11,9 @@
 //forward declaration
 class Node;
 
-//TIPS
-//	Chord leverages Remote Procedure Call (RPC) to either iteratively or recursively 
-//	to lookup a key located at other nodes. It is easy to mimic RPC in simulation settings
-//	For example,
-/*
-	int remoteLookup(uint8_t key, Node* remoteNode) {
-		return remoteNode->localLookup(uint8_t key);
-	}
-
-	RECURSIVE:
-	int remoteLookup(uint8_t key, Node* remoteNode) {
-		return remoteNode->remoteLookup(key, anotheRemoterNode);
-	}
-*/
-
-
 //The following code is just for reference. You can define your own finger table class.
 //Since the index uniquely determines the interval, only the successor needs to be maintained.  
 class FingerTable{
-
 public:
 	/**
 	 * @param nodeId: the id of node hosting the finger table.
@@ -55,74 +38,19 @@ FingerTable::FingerTable(uint8_t nodeId): nodeId_(nodeId) {
 }
 
 class Node {
-
-
 public:
-	Node(uint8_t id): id_(id){
-
-	}
+	Node(uint8_t id): id_(id){}
 	//TODO: implement node join function
-	//keys should be migrated to new node as well
 	/**
 	 * @param node: the first node to contact with to initialize join process. If this is the first node to join the Chord network, the parameter is NULL.
 	 */
-	void join(Node* node){
-		if(node == NULL){
-			// add first node to network
-		}
-		else{
-			// add node to network
-			// migrate keys
-		}
-	};
-
+	void join(Node* node);
 	//TODO: implement DHT lookup
-	//upon join, the updated finger table should be printed to the screen
-	//upon join, print the keys that are migrated
-	uint8_t find(uint8_t key){
-		// check local keys for keyt
-		auto search = localKeys_.find(key);
-		// if search is successful
-		if(search != localKeys_.end()){
-			// return value from dictionary key query
-			return search->second;
-		}
-
-		// else, find key in proper node from finger table
-
-	};
-
+	uint8_t find(uint8_t key);
 	//TODO: implement DHT key insertion
-	//node needs to query the key from the Chord network. Querying keys are not maintained locally
-	//upon find, the sequence of nodes that the node talks to should be printed to the screen too
-	void insert(uint8_t key, uint8_t value){
-		// if (key is to be inserted into this node){
-			// localKeys_.insert(key, value);
-		// }
-	};
-
-
+	void insert(uint8_t key);
 	//TODO: implement DHT key deletion
-	void remove(uint8_t key){
-		// check local keys for key
-		auto search = localKeys_.find(key);
-		// if search is successful
-		if(search != localKeys_.end()){
-			// delete value from dictionary key query
-			localKeys_.erase(key);
-		}
-		else{
-			// find key in proper node from finger table
-			// delete key
-		}
-	};
-
-	//OPTIONAL TODO (20% extra): implement node leaving
-	//not sure if param is supposed to be id
-	//locate the node, move keys maintained in the node to another node
-	void leave(uint8_t id){
-
-	};
+	void remove(uint8_t key);
 private:
 	uint64_t id_;
 	FingerTable fingerTable_;
