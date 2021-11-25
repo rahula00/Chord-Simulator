@@ -2,6 +2,18 @@
 #include<iostream>
 using namespace std;
 
+Node* Node::findSuccesor(uint8_t id) {
+    auto succ = findPredecessor(id);
+    return succ.getSuccesor();
+}
+
+Node* Node::findPredecessor(uint8_t id) {
+    while()
+}
+
+Node* Node::closestPrecedingFinger(uint8_t id) {
+    
+}
 void Node::join(Node* node){
     if(node){
         
