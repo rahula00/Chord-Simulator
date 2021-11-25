@@ -1,7 +1,8 @@
 #ifndef NODE_H
 #define NODE_H
 
-#include <stdint.h>
+#include <cstdint>
+#include <cmath>
 #include <map>
 #include <set>
 #include <vector>
@@ -70,10 +71,20 @@ public:
 	Node* getPredecessor() {
 		return predecessor;
 	}
-
+	uint8_t getID() {
+		return id_;
+	}
 	void transfer() {
-		map<uint8_t, uint8_t> res =  
-		this->localKeys_.insert(res.begin(), res.end());
+
+		std::map<uint8_t, uint8_t> res;
+		for (std::pair<uint8_t, uint8_t> entry: localKeys_) {
+			uint8_t loc =  entry.first % (uint8_t) std::pow(2, BITLENGTH);
+			if(succesor->getID() - loc < this->getID() - loc){
+				res[entry.first] = entry.second;
+				localKeys_.erase(entry.first);
+			}
+		} 
+		succesor->localKeys_.insert(res.begin(), res.end());
 	}
 
 private:
