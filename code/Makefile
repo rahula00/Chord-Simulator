@@ -1,12 +1,13 @@
 #------------------------------------------------------------------------------
-# Makefile for node.c 
+# Makefile for node.cpp
 #------------------------------------------------------------------------------
 
-ADT     = node
-EXEBIN  = $(ADT)Client
-SOURCES = $(ADT).cpp $(EXEBIN).cpp Makefile node.h 
-OBJECTS = $(ADT).o $(EXEBIN).o
-HEADERS = $(ADT).h
+ADT_NAME  = node
+SOURCES   = $(ADT_NAME).cpp
+OBJECTS   = $(ADT_NAME).o 
+HEADERS   = $(ADT_NAME).h
+EXEBIN    = $(ADT_NAME)
+FLAGS     = 
 
 all: $(EXEBIN)
 
@@ -21,3 +22,5 @@ clean :
 
 check:
 	valgrind --leak-check=full $(EXEBIN) 
+
+
