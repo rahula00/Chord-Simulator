@@ -25,11 +25,11 @@ void Node::join(Node* node){
     if(node){  
         //init_finger_table(node)
         //update_others
-       getPredecessor()->transfer();
+        //transfer nodes
     }
 
     else {
-        this->FingerTable_->initInnerFT(node);
+        FingerTable_.initInnerFT(node);
         predecessor = this;
     }
 }

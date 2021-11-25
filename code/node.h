@@ -15,12 +15,13 @@ class Node;
 
 //The following code is just for reference. You can define your own finger table class.
 //Since the index uniquely determines the interval, only the successor needs to be maintained.  
-class FingerTable{
+class FingerTable {
 public:
 	/**
 	 * @param nodeId: the id of node hosting the finger table.
 	 */
 	FingerTable(uint8_t nodeId) : nodeId_(nodeId) {}
+	FingerTable() = default;
 	void set(size_t index, Node* successor){
 		innerFingerTable_[index] = successor;
 	}
@@ -30,8 +31,8 @@ public:
 	// TODO: complete print function
 	void prettyPrint();
 
-	std::vector<Node*> initInnerFT(Node * self) {
-		innerFingerTable_ = std::vector<Node*>(BITLENGTH, self);
+	void initInnerFT(Node* node) {
+		innerFingerTable_ = std::vector<Node*>(BITLENGTH, node);
 	}
 private:
 	uint8_t nodeId_;
@@ -74,24 +75,17 @@ public:
 	uint8_t getID() {
 		return id_;
 	}
-	void transfer() {
-
-		std::map<uint8_t, uint8_t> res;
-		for (std::pair<uint8_t, uint8_t> entry: localKeys_) {
-			uint8_t loc =  entry.first % (uint8_t) std::pow(2, BITLENGTH);
-			if(succesor->getID() - loc < this->getID() - loc){
-				res[entry.first] = entry.second;
-				localKeys_.erase(entry.first);
-			}
-		} 
-		succesor->localKeys_.insert(res.begin(), res.end());
-	}
+	std::map<uint8_t, uint8_t> transfer() {
+		return localKeys_;
+	} 
+	
+	
 
 private:
 	Node* succesor;
 	Node* predecessor;
 	uint8_t id_;
-	FingerTable* FingerTable_;
+	FingerTable FingerTable_;
 	std::map<uint8_t, uint8_t> localKeys_;
 };
 
