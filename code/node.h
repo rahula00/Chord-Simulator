@@ -9,33 +9,33 @@
 #define BITLENGTH 8
 
 //forward declaration
-class Node;
+// class Node;
 
 //The following code is just for reference. You can define your own finger table class.
 //Since the index uniquely determines the interval, only the successor needs to be maintained.  
-class FingerTable{
-public:
-	/**
-	 * @param nodeId: the id of node hosting the finger table.
-	 */
-	FingerTable(uint8_t nodeId);
-	void set(size_t index, Node* successor){
-		fingerTable_[index] = successor;
-	}
-	uint8_t get(size_t index) {
-		return fingerTable_[index];
-	}
-	// TODO: complete print function
-	void prettyPrint();
-private:
-	uint8_t nodeId_;
-	std::vector<Node*> fingerTable_;
-};
+// class FingerTable{
+// public:
+// 	/**
+// 	 * @param nodeId: the id of node hosting the finger table.
+// 	 */
+// 	FingerTable(uint8_t nodeId);
+// 	void set(size_t index, Node* successor){
+// 		fingerTable_[index] = successor;
+// 	}
+// 	uint8_t get(size_t index) {
+// 		return fingerTable_[index];
+// 	}
+// 	// TODO: complete print function
+// 	void prettyPrint();
+// private:
+// 	uint8_t nodeId_;
+// 	std::vector<Node*> fingerTable_;
+// };
 
-FingerTable::FingerTable(uint8_t nodeId): nodeId_(nodeId) {
-	// According to Chord paper, the finger table starts from index=1
-	fingerTable_.resize(BITLENGTH + 1);
-}
+// FingerTable::FingerTable(uint8_t nodeId): nodeId_(nodeId) {
+// 	// According to Chord paper, the finger table starts from index=1
+// 	fingerTable_.resize(BITLENGTH + 1);
+// }
 
 class Node {
 public:
@@ -51,9 +51,11 @@ public:
 	void insert(uint8_t key);
 	//TODO: implement DHT key deletion
 	void remove(uint8_t key);
+
 private:
 	uint64_t id_;
-	FingerTable fingerTable_;
+	// FingerTable fingerTable_;
+	std::map<uint8_t, Node*> fingerTable_;
 	std::map<uint8_t, uint8_t> localKeys_;
 };
 
