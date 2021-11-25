@@ -40,6 +40,7 @@
 class Node {
 public:
 	Node(uint8_t id): id_(id){}
+	Node() = default;
 	//TODO: implement node join function
 	/**
 	 * @param node: the first node to contact with to initialize join process. If this is the first node to join the Chord network, the parameter is NULL.
@@ -48,12 +49,15 @@ public:
 	//TODO: implement DHT lookup
 	uint8_t find(uint8_t key);
 	//TODO: implement DHT key insertion
-	void insert(uint8_t key);
+	void insert(uint8_t key, uint8_t value);
 	//TODO: implement DHT key deletion
 	void remove(uint8_t key);
 
+	void testPrint();
+
+
 private:
-	uint64_t id_;
+	uint8_t id_;
 	// FingerTable fingerTable_;
 	std::map<uint8_t, Node*> fingerTable_;
 	std::map<uint8_t, uint8_t> localKeys_;

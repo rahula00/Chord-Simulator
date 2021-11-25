@@ -1,13 +1,13 @@
 #------------------------------------------------------------------------------
-# Makefile for node.cpp
+# Makefile for any ADT and its test client
 #------------------------------------------------------------------------------
 
 ADT_NAME  = node
-SOURCES   = $(ADT_NAME).cpp
-OBJECTS   = $(ADT_NAME).o 
+SOURCES   = $(ADT_NAME).cpp $(ADT_NAME)Client.cpp
+OBJECTS   = $(ADT_NAME).o $(ADT_NAME)Client.o
 HEADERS   = $(ADT_NAME).h
-EXEBIN    = $(ADT_NAME)
-FLAGS     = 
+EXEBIN    = $(ADT_NAME)Client
+FLAGS     = -std=c++11
 
 all: $(EXEBIN)
 
