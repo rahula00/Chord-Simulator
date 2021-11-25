@@ -5,6 +5,7 @@
 #include <map>
 #include <set>
 #include <vector>
+#include <tuple>
 
 #define BITLENGTH 8
 
@@ -27,6 +28,10 @@ public:
 	}
 	// TODO: complete print function
 	void prettyPrint();
+
+	std::vector<Node*> initInnerFT(Node * self) {
+		innerFingerTable_ = std::vector<Node*>(BITLENGTH, self);
+	}
 private:
 	uint8_t nodeId_;
 	std::vector<Node*> innerFingerTable_;
@@ -39,6 +44,7 @@ private:
 
 class Node {
 public:
+	static uint8_t nodeCnt;
 	Node(uint8_t id): id_(id){}
 	Node() = default;
 	//TODO: implement node join function
@@ -61,12 +67,20 @@ public:
 	Node* getSuccesor() {
 		return succesor;
 	}
+	Node* getPredecessor() {
+		return predecessor;
+	}
+
+	void transfer() {
+		map<uint8_t, uint8_t> res =  
+		this->localKeys_.insert(res.begin(), res.end());
+	}
 
 private:
 	Node* succesor;
+	Node* predecessor;
 	uint8_t id_;
-	// FingerTable fingerTable_;
-	std::map<uint8_t, Node*> fingerTable_;
+	FingerTable* FingerTable_;
 	std::map<uint8_t, uint8_t> localKeys_;
 };
 

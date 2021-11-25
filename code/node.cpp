@@ -2,33 +2,41 @@
 #include<iostream>
 using namespace std;
 
+
 Node* Node::findSuccesor(uint8_t id) {
     auto succ = findPredecessor(id);
-    return succ.getSuccesor();
+    return succ->succesor;
 }
 
 Node* Node::findPredecessor(uint8_t id) {
-    while()
+  
 }
 
 Node* Node::closestPrecedingFinger(uint8_t id) {
-    
+    // for (auto& entry: FingerTable_) {
+    //     // if(entry.node->id_) {
+
+    //     // }
+    // }
 }
+
+
 void Node::join(Node* node){
-    if(node){
-        
-        //fingerTable_.insert(std::pair<uint8_t,Node*>(node->id_, node));
-      
+    if(node){  
+        //init_finger_table(node)
+        //update_others
+       getPredecessor()->transfer();
     }
+
     else {
-        if (fingerTable_.empty()) {
-            fingerTable_.insert(std::pair<uint8_t,Node*>(id_, NULL));
-        } else { //Error joining NULL node when fingerTable is non-empty
-		    cerr << "Error: Unable to join NULL node when FingerTable is not empty!\n";
-            exit(1);
-        }
+        this->FingerTable_->initInnerFT(node);
+        predecessor = this;
     }
 }
+
+// void Node::Leave() {
+//     //to do?
+// }
 
 uint8_t Node::find(uint8_t key){
     // check local keys for keyt
@@ -45,9 +53,7 @@ uint8_t Node::find(uint8_t key){
 }
 
 void Node::insert(uint8_t key, uint8_t val){
-    // if (fingerTable_.size()==1 && fingerTable.) {
-
-    
+  
     std::pair<std::map<uint8_t, uint8_t>::iterator,bool> ret;
     ret = localKeys_.insert(std::pair<uint8_t,uint8_t>(key,val));
     
