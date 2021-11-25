@@ -34,6 +34,11 @@ public:
 	void initInnerFT(Node* node) {
 		innerFingerTable_ = std::vector<Node*>(BITLENGTH, node);
 	}
+
+	std::vector<Node*> getInner() {
+		return innerFingerTable_;
+	}
+
 private:
 	uint8_t nodeId_;
 	std::vector<Node*> innerFingerTable_;
@@ -72,11 +77,19 @@ public:
 	Node* getPredecessor() {
 		return predecessor;
 	}
+
 	uint8_t getID() {
 		return id_;
 	}
-	std::map<uint8_t, uint8_t> transfer() {
-		return localKeys_;
+	std::map<uint8_t, uint8_t> transfer(Node* node) {
+		std::map<uint8_t, uint8_t> toTransfer;
+		Node* P = findPredecessor(getID());
+		for ( const auto &keyVal :  localKeys_) {
+			if (keyVal.first - node->id_ > keyVal.first - getID()) {
+				toTransfer[keyVal.first] = keyVal.second;
+			}
+		}
+		return toTransfer;
 	} 
 	
 	

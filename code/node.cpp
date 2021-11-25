@@ -5,19 +5,22 @@ using namespace std;
 
 Node* Node::findSuccesor(uint8_t id) {
     auto succ = findPredecessor(id);
-    return succ->succesor;
+    return succ->getSuccesor();
 }
 
 Node* Node::findPredecessor(uint8_t id) {
-  
+  Node* temp = this;
+  while(temp->getID() != id) {
+      temp = temp->closestPrecedingFinger(id)->getSuccesor();
+  }
+  return temp;
 }
 
 Node* Node::closestPrecedingFinger(uint8_t id) {
-    // for (auto& entry: FingerTable_) {
-    //     // if(entry.node->id_) {
-
-    //     // }
-    // }
+    for (auto& entry: FingerTable_.getInner()) {
+        cout << "Entry: " << entry->getID();
+    }
+    return this;
 }
 
 
@@ -25,7 +28,8 @@ void Node::join(Node* node){
     if(node){  
         //init_finger_table(node)
         //update_others
-        //transfer nodes
+        std::map<uint8_t, uint8_t> a = transfer(node);
+
     }
 
     else {
