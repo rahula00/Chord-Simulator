@@ -34,7 +34,17 @@ void Node::join(Node* node){
 
     else {
         FingerTable_.initInnerFT(node);
+        // cout << FingerTable_.getID() << "\n";
+        printf("%d\n", FingerTable_.getID());
+
+        FingerTable_.setID(getID());
+        printf("%d\n", FingerTable_.getID());
+
         predecessor = this;
+
+        for(int i=1; i<BITLENGTH; i++){
+            cout<<i<<"\n";
+        }
     }
 }
 

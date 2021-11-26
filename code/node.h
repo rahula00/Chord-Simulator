@@ -32,7 +32,17 @@ public:
 	void prettyPrint();
 
 	void initInnerFT(Node* node) {
-		innerFingerTable_ = std::vector<Node*>(BITLENGTH, node);
+		// finger table starts at 1
+		innerFingerTable_ = std::vector<Node*>(BITLENGTH + 1);
+		// innerFingerTable_ = std::vector<Node*>(BITLENGTH, node);
+	}
+
+	uint8_t getID(){
+		return nodeId_;
+	}
+
+	void setID(uint8_t id){
+		nodeId_ = id;
 	}
 
 	std::vector<Node*> getInner() {
@@ -52,7 +62,9 @@ private:
 class Node {
 public:
 	static uint8_t nodeCnt;
-	Node(uint8_t id): id_(id){}
+	Node(uint8_t id): id_(id){
+		FingerTable_ = FingerTable(id);
+	}
 	Node() = default;
 	//TODO: implement node join function
 	/**
