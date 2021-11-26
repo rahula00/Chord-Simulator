@@ -7,6 +7,8 @@
 #include <set>
 #include <vector>
 #include <tuple>
+#include <iostream>
+using namespace std;
 
 #define BITLENGTH 8
 
@@ -77,16 +79,32 @@ public:
 	//TODO: implement DHT key deletion
 	void remove(uint8_t key);
 
+	void init_finger_table(Node* node);
+
 	Node* findSuccesor(uint8_t id);
 	Node* findPredecessor(uint8_t id);
 	Node* closestPrecedingFinger(uint8_t id);
 	void testPrint();
 
 	Node* getSuccesor() {
+		if(succesor == NULL){
+			cerr << "Successor is null";
+			exit(EXIT_FAILURE);
+		}
 		return succesor;
 	}
 	Node* getPredecessor() {
+		if(predecessor == NULL){
+			cerr << "Predecessor is null";
+			exit(EXIT_FAILURE);
+		}
 		return predecessor;
+	}
+	void setSuccesor(Node* node) {
+		succesor = node;
+	}
+	void setPredecessor(Node* node) {
+		predecessor = node;
 	}
 
 	uint8_t getID() {
