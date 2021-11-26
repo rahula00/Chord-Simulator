@@ -23,9 +23,10 @@ Node *Node::findPredecessor(uint8_t id)
     Node *temp = this;
     while ( !between(temp->getID(), temp->getSuccesor()->getID(), id) )
     {
-        // why is the -> getSuccessor here?
-        // temp = temp->closestPrecedingFinger(id)->getSuccesor();
         temp = temp->closestPrecedingFinger(id);
+        if(temp == temp->closestPrecedingFinger(id)){
+            break;
+        }
     }
     
     return temp;
@@ -35,12 +36,11 @@ Node *Node::closestPrecedingFinger(uint8_t id)
 {
     std::vector<Node*> fingers = FingerTable_.getInner();
     for(int i=BITLENGTH; i>0; --i){
-        printf("i = %d\n", i);
         printf("Searching between %d and %d\n", this->getID(), id);
         fflush(stdout);
 
         if(between(this->getID(), id, fingers[i]->getID())){
-            cout << "RETURNED fingers[i]";
+            printf("RETURNED fingers[i]: id %d\n", fingers[i]->getID());
             return fingers[i];
         }
     }
@@ -75,8 +75,8 @@ void Node::init_finger_table(Node* node){
     // finger[1].node = n0.find_successor(finger[1].start);
     uint8_t fingerStart = id_ + 1; // 1 = 2**0
     FingerTable_.set( 1, node->findSuccesor(fingerStart) );
-    cout << "seg fault above\n";
     // predecessor = successor.predecessor;
+    cout << "breaking below\n";
     predecessor = succesor->getPredecessor();
     // successor.predecessor = n;
     succesor->setPredecessor(this);
