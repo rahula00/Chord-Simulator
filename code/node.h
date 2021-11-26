@@ -114,7 +114,6 @@ private:
 };
 
 inline void FingerTable::prettyPrint(Node* node){
-	nodeId_ = 0;
 	uint8_t predID = node->getPredecessor()->getID();
 	uint8_t succID = node->getSuccesor()->getID();
 
