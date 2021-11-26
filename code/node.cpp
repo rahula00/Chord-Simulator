@@ -2,6 +2,15 @@
 #include <iostream>
 using namespace std;
 
+bool between(uint8_t a, uint8_t b, uint8_t key){
+    uint8_t start = min(a,b);
+    uint8_t end = max(a,b);
+    if((key >= start) && (key <= end)){
+        return true;
+    }
+    return false;
+}
+
 Node *Node::findSuccesor(uint8_t id)
 {
     auto succ = findPredecessor(id);
@@ -11,24 +20,31 @@ Node *Node::findSuccesor(uint8_t id)
 Node *Node::findPredecessor(uint8_t id)
 {
     Node *temp = this;
-    while (temp->getID() != id)
+    while (!between(temp->getID(), temp->getSuccesor()->getID(), id) )
     {
         // why is the -> getSuccessor here?
-        temp = temp->closestPrecedingFinger(id)->getSuccesor();
-        // temp = temp->closestPrecedingFinger(id);
+        // temp = temp->closestPrecedingFinger(id)->getSuccesor();
+        temp = temp->closestPrecedingFinger(id);
     }
     return temp;
 }
 
 Node *Node::closestPrecedingFinger(uint8_t id)
 {
-    for (auto &entry : FingerTable_.getInner())
-    {
-        cout << "Entry: " << entry->getID();
-        // if(entry->getID() == id){
-        //     return;
-        // }
+    std::vector<Node*> fingers = FingerTable_.getInner();
+    for(int i=BITLENGTH; i>0; i--){
+        if(between(this->getID(), id, fingers[i]->getID())){
+            return fingers[i];
+        }
     }
+    // for (auto &entry : FingerTable_.getInner())
+    // {
+    //     cout << "Entry: " << entry->getID();
+    //     if(entry->getID() == id{
+    //     if(entry->getID() == id{
+    //         return
+    //     }
+    // }
     return this;
 }
 
@@ -70,15 +86,6 @@ void Node::join(Node *node)
         // the addition of n.
         // 3. Notify the higher layer software so that it can transfer state
         // (e.g. values) associated with keys that node n is now responsible for.
-
-        // creates FT with all successors set to NULL
-        FingerTable_.initInnerFT(this);
-        // for(int i=1; i<BITLENGTH+1; i++){
-        //     uint8_t k = id_ + pow(2, i-1);
-        //     uint8_t k2 = id_ + pow(2, i-1);
-        //     FingerTable_.set(i, succesor);
-        // }
-
         // update_others
 
         // std::map<uint8_t, uint8_t> a = transfer(node);
