@@ -12,16 +12,16 @@ bool between(uint8_t a, uint8_t b, uint8_t key){
     return false;
 }
 
-Node* Node::findSuccesor(uint8_t id)
+Node* Node::findSuccessor(uint8_t id)
 {
     Node* succ = findPredecessor(id);
-    return succ->getSuccesor();
+    return succ->getSuccessor();
 }
 
 Node *Node::findPredecessor(uint8_t id)
 {
     Node *temp = this;
-    while ( !between(temp->getID(), temp->getSuccesor()->getID(), id) )
+    while ( !between(temp->getID(), temp->getSuccessor()->getID(), id) )
     {
         temp = temp->closestPrecedingFinger(id);
         if(temp == temp->closestPrecedingFinger(id)){
@@ -74,12 +74,13 @@ Node *Node::closestPrecedingFinger(uint8_t id)
 void Node::init_finger_table(Node* node){
     // finger[1].node = n0.find_successor(finger[1].start);
     uint8_t fingerStart = id_ + 1; // 1 = 2**0
-    FingerTable_.set( 1, node->findSuccesor(fingerStart) );
+    FingerTable_.set( 1, node->findSuccessor(fingerStart) );
     // predecessor = successor.predecessor;
     cout << "breaking below\n";
-    predecessor = succesor->getPredecessor();
+    successor = FingerTable_.get(1);
+    predecessor = successor->getPredecessor();
     // successor.predecessor = n;
-    succesor->setPredecessor(this);
+    successor->setPredecessor(this);
     // for i = 1 to m - 1
 
     
@@ -93,7 +94,7 @@ void Node::init_finger_table(Node* node){
         }
         else{
             // finger[i+ 1].node = node.find successor(finger[i+ 1].start);
-            FingerTable_.set(i+1, node->findSuccesor(fingerStart));
+            FingerTable_.set(i+1, node->findSuccessor(fingerStart));
         }
 
     //         finger[i+1].node = finger[i].node;
@@ -128,12 +129,12 @@ void Node::join(Node *node)
     else
     {
         FingerTable_.initInnerFT(node);
-        succesor = this;
+        successor = this;
         predecessor = this;
         // Set all successors in FT to self
         for (int i = 1; i < BITLENGTH + 1; i++)
         {
-            FingerTable_.set(i, succesor);
+            FingerTable_.set(i, successor);
         }
     }
 

@@ -27,6 +27,8 @@ public:
 	void set(size_t index, Node* successor){
 		innerFingerTable_[index] = successor;
 	}
+
+
 	Node* get(size_t index) {
 		return innerFingerTable_[index];
 	}
@@ -81,17 +83,17 @@ public:
 
 	void init_finger_table(Node* node);
 
-	Node* findSuccesor(uint8_t id);
+	Node* findSuccessor(uint8_t id);
 	Node* findPredecessor(uint8_t id);
 	Node* closestPrecedingFinger(uint8_t id);
 	void testPrint();
 
-	Node* getSuccesor() {
-		if(succesor == NULL){
+	Node* getSuccessor() {
+		if(successor == NULL){
 			cerr << "Successor is null";
 			exit(EXIT_FAILURE);
 		}
-		return succesor;
+		return successor;
 	}
 	Node* getPredecessor() {
 		if(predecessor == NULL){
@@ -100,8 +102,8 @@ public:
 		}
 		return predecessor;
 	}
-	void setSuccesor(Node* node) {
-		succesor = node;
+	void setSuccessor(Node* node) {
+		successor = node;
 	}
 	void setPredecessor(Node* node) {
 		predecessor = node;
@@ -124,7 +126,7 @@ public:
 	
 
 private:
-	Node* succesor;
+	Node* successor;
 	Node* predecessor;
 	uint8_t id_;
 	FingerTable FingerTable_;
@@ -133,7 +135,7 @@ private:
 
 inline void FingerTable::prettyPrint(Node* node){
 	uint8_t predID = node->getPredecessor()->getID();
-	uint8_t succID = node->getSuccesor()->getID();
+	uint8_t succID = node->getSuccessor()->getID();
 
 	printf("----------Node ID:%d----------\n", nodeId_);
 	printf("Successor: %d Predecessor: %d\n", succID, predID);
