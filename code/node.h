@@ -28,13 +28,12 @@ public:
 	Node* get(size_t index) {
 		return innerFingerTable_[index];
 	}
-	// TODO: complete print function
-	void prettyPrint();
+
+	void prettyPrint(Node* node);
 
 	void initInnerFT(Node* node) {
 		// finger table starts at 1
-		innerFingerTable_ = std::vector<Node*>(BITLENGTH + 1);
-		// innerFingerTable_ = std::vector<Node*>(BITLENGTH, node);
+		innerFingerTable_ = std::vector<Node*>(BITLENGTH + 1, node);
 	}
 
 	uint8_t getID(){
@@ -113,5 +112,22 @@ private:
 	FingerTable FingerTable_;
 	std::map<uint8_t, uint8_t> localKeys_;
 };
+
+inline void FingerTable::prettyPrint(Node* node){
+	nodeId_ = 0;
+	uint8_t predID = node->getPredecessor()->getID();
+	uint8_t succID = node->getSuccesor()->getID();
+
+	printf("----------Node ID:%d----------\n", nodeId_);
+	printf("Successor: %d Predecessor: %d\n", succID, predID);
+	printf("FingerTables:\n");
+	for(int i=1; i<BITLENGTH+1; i++){
+		uint8_t k = nodeId_ + pow(2, i-1);
+		uint8_t k2 = k + pow(2, i-1);
+		printf("| k = %d [ %d , %d )	succ. = %d |\n", k, k, k2, innerFingerTable_[i]->getID());
+	}
+	printf("-----------------------------\n");
+	printf("*****************************\n");
+}
 
 #endif

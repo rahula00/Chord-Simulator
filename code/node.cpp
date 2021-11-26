@@ -25,27 +25,25 @@ Node* Node::closestPrecedingFinger(uint8_t id) {
 
 
 void Node::join(Node* node){
-    if(node){  
+    
+
+    if(node == NULL){
+        // creates FT with all successors set to NULL
+        FingerTable_.initInnerFT(node);
+        succesor = this;
+        predecessor = this;
+        for(int i=1; i<BITLENGTH+1; i++){
+            FingerTable_.set(i, succesor);
+        }
+    }
+    else{  
         //init_finger_table(node)
         //update_others
         std::map<uint8_t, uint8_t> a = transfer(node);
 
     }
 
-    else {
-        FingerTable_.initInnerFT(node);
-        // cout << FingerTable_.getID() << "\n";
-        printf("%d\n", FingerTable_.getID());
-
-        FingerTable_.setID(getID());
-        printf("%d\n", FingerTable_.getID());
-
-        predecessor = this;
-
-        for(int i=1; i<BITLENGTH; i++){
-            cout<<i<<"\n";
-        }
-    }
+    FingerTable_.prettyPrint(this);
 }
 
 // void Node::Leave() {
