@@ -52,6 +52,13 @@ public:
 		return innerFingerTable_;
 	}
 
+	void hack(Node* node){
+		for(int i=1; i<7;i++){
+			innerFingerTable_[i] = node;
+		}
+	}
+
+
 private:
 	uint8_t nodeId_;
 	std::vector<Node*> innerFingerTable_;
@@ -80,6 +87,14 @@ public:
 	void insert(uint8_t key, uint8_t value);
 	//TODO: implement DHT key deletion
 	void remove(uint8_t key);
+
+	void hack(Node* node){
+		this->successor = node;
+		FingerTable_.hack(node);
+	}
+	FingerTable getFingerTable(){
+		return FingerTable_;
+	}
 
 	void init_finger_table(Node* node);
 
@@ -143,7 +158,7 @@ inline void FingerTable::prettyPrint(Node* node){
 	for(int i=1; i<BITLENGTH+1; i++){
 		uint8_t k = nodeId_ + pow(2, i-1);
 		uint8_t k2 = k + pow(2, i-1);
-		printf("| k = %d [ %d , %d )	succ. = %d |\n", k, k, k2, innerFingerTable_[i]->getID());
+		printf("| k = %d [ %d , %d )	succ. = %d |\n", i, k, k2, innerFingerTable_[i]->getID());
 	}
 	printf("-----------------------------\n");
 	printf("*****************************\n");

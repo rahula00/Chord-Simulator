@@ -3,12 +3,49 @@
 using namespace std;
 
 // checks if key is between vars a and b
+// bool between(uint8_t a, uint8_t b, uint8_t key){
+//     printf("a is %d, b is %d\n", a, b);
+//     uint8_t start = min(a,b);
+//     uint8_t end = max(a,b);
+//     if((key >= start) && (key <= end)){
+//         return true;
+//     }
+//     return false;
+// }
+
+// checks if key is between vars a and b
+// uint8 range = [0, 255]
 bool between(uint8_t a, uint8_t b, uint8_t key){
-    uint8_t start = min(a,b);
-    uint8_t end = max(a,b);
-    if((key >= start) && (key <= end)){
-        return true;
+    // a = 20
+    // b = 5
+    // key = 3
+
+    if (a > b){    
+        printf("a(%d) is greater than b(%d), key is %d\n", a, b, key);
+        printf("searching range [%d, 255], [0, %d]\n", a, b);
+        if((key >= a && key <= 255) || (key >= 0 && key <= b)){
+            printf("Key is in between!\n");
+        }
+        else{
+            printf("Key is NOT in between!");
+        }
+        return (key >= a && key <= 255) || (key >= 0 && key <= b);
     }
+    else if (b > a){
+        printf("a(%d) is smaller than b(%d), key is %d\n", a, b, key);
+        printf("searching range [%d, %d]\n", a, b);
+        if((key >= a) && (key <= b)){
+            printf("Key is in between!\n");
+        }
+        else{
+            printf("Key is NOT in between!");
+        }
+        return (key >= a) && (key <= b);
+    }
+    else{
+        return key == a;
+    }
+
     return false;
 }
 
@@ -106,9 +143,31 @@ void Node::init_finger_table(Node* node){
 
 }
 
+// update all nodes whose finger
+// // tables should refer to n
+// n.update_others()
+//     for i = 1 to m
+//         // find last node p whose i th finger might be n
+//     p = find predecessor (n-2^i-1);
+// p =  update_finger_table( n, i);
+// // if s is ith finger of n , update n ’s finger table with s
+// n.update_finger_table( s, i);
+// if (s in [n, finger[i].node))
+//      finger[i].node = s;
+//      p = predecessor; // get first node preceding n
+//      p.update_finger_table(s, i);
+
+
+
 void Node::join(Node *node)
 {
     // Adding node to existing network
+    // if (this->getID() == 63){
+    //     node->hack(this);
+    //     node->getFingerTable().prettyPrint(node);
+    // }
+
+
     if (node)
     {
         FingerTable_.initInnerFT(NULL);
