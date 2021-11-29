@@ -98,6 +98,9 @@ public:
 
 	void init_finger_table(Node* node);
 
+	void update_others();
+	void update_finger_table(Node* s, uint8_t i);
+
 	Node* findSuccessor(uint8_t id);
 	Node* findPredecessor(uint8_t id);
 	Node* closestPrecedingFinger(uint8_t id);
