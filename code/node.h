@@ -104,7 +104,10 @@ public:
 	Node* findSuccessor(uint8_t id);
 	Node* findPredecessor(uint8_t id);
 	Node* closestPrecedingFinger(uint8_t id);
-	void testPrint();
+
+	void prettyPrint(){
+		FingerTable_.prettyPrint(this);
+	}
 
 	Node* getSuccessor() {
 		if(successor == NULL){
