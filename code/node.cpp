@@ -3,20 +3,14 @@
 using namespace std;
 
 // checks if key is between vars a and b
-// bool between(uint8_t a, uint8_t b, uint8_t key){
-//     printf("a is %d, b is %d\n", a, b);
-//     uint8_t start = min(a,b);
-//     uint8_t end = max(a,b);
-//     if((key >= start) && (key <= end)){
-//         return true;
-//     }
-//     return false;
-// }
-
-// checks if key is between vars a and b
 // uint8 range = [0, 255]
 bool between(uint8_t a, uint8_t b, uint8_t key, bool aInc, bool bInc){
     // if not a inclusive, increase a by 1
+    if(a == b){
+        return (key == a) && (aInc || bInc);
+    }
+
+
     if(!aInc){
         a++;
     }
@@ -25,8 +19,8 @@ bool between(uint8_t a, uint8_t b, uint8_t key, bool aInc, bool bInc){
         b--;
     }
     if (a > b){    
-        printf("a(%d) is greater than b(%d), key is %d\n", a, b, key);
-        printf("searching range [%d, 255], [0, %d]\n", a, b);
+            // printf("a(%d) is greater than b(%d), key is %d\n", a, b, key);
+            printf("searching range [%d, 255], [0, %d] for %d\n", a, b, key);
         if((key >= a && key <= 255) || (key >= 0 && key <= b)){
             printf("Key is in between!\n");
         }
@@ -36,13 +30,13 @@ bool between(uint8_t a, uint8_t b, uint8_t key, bool aInc, bool bInc){
         return (key >= a && key <= 255) || (key >= 0 && key <= b);
     }
     else if (b > a){
-        printf("a(%d) is smaller than b(%d), key is %d\n", a, b, key);
-        printf("searching range [%d, %d]\n", a, b);
+        // printf("a(%d) is smaller than b(%d), key is %d\n", a, b, key);
+        printf("searching range [%d, %d] for %d\n", a, b, key);
         if((key >= a) && (key <= b)){
             printf("Key is in between!\n");
         }
         else{
-            printf("Key is NOT in between!");
+            printf("Key is NOT in between!\n");
         }
         return (key >= a) && (key <= b);
     }
@@ -56,24 +50,18 @@ bool between(uint8_t a, uint8_t b, uint8_t key, bool aInc, bool bInc){
 Node* Node::findSuccessor(uint8_t id)
 {
     Node* succ = findPredecessor(id);
-    cout << (int) succ->getSuccessor()->getID() << " is the succ of " << (int) id << endl;
+    printf("findSucc ID Param: %d\nSUCC ID: %d\nSUCC's SUCC ID: %d\n", id, succ->getID(), succ->getSuccessor()->getID());
     return succ->getSuccessor();
 }
 
 Node *Node::findPredecessor(uint8_t id)
 {
     Node *temp = this;
-    int loopCnt = 0;
     while ( !between(temp->getID(), temp->getSuccessor()->getID(), id, false, true) ) {
-        printf("FIND PRED LOOP\n");
+        // printf("FIND PRED LOOP\n");
         temp = temp->closestPrecedingFinger(id);
-        loopCnt++;
-        if(loopCnt >  10) {
-            break;
-        }
     }
-    //loops infinitely because its its own pred
-    // printf("Predecessor Found: %d\n", temp->getID());
+
     cout << (int) temp->getID() << " is the pred of " << (int) id << endl;
     return temp;
 }
@@ -82,11 +70,11 @@ Node *Node::closestPrecedingFinger(uint8_t id)
 {
     std::vector<Node*> fingers = FingerTable_.getInner();
     for(int i=BITLENGTH; i>0; --i) {
-        printf("Searching between %d and %d\n", this->getID(), id);
+        // printf("Searching between %d and %d\n", this->getID(), id);
         fflush(stdout);
 
         if(between(this->getID(), id, fingers[i]->getID(), false, false)){
-            printf("RETURNED fingers[i]: id %d\n", fingers[i]->getID());
+            // printf("RETURNED fingers[i]: id %d\n", fingers[i]->getID());
             return fingers[i];
         }
     }
@@ -100,6 +88,10 @@ void Node::init_finger_table(Node* node){
     // finger[1].node = n0.find_successor(finge`                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            r[1].start);
     uint8_t fingerStart = id_ + 1; // 1 = 2**0
     FingerTable_.set( 1, node->findSuccessor(fingerStart) );
+
+    // ANTONE
+    //node->getFingerTable().set(1, this);
+    
     // predecessor = successor.predecessor;
     successor = FingerTable_.get(1);
     predecessor = successor->getPredecessor();
@@ -110,7 +102,7 @@ void Node::init_finger_table(Node* node){
         std::vector<Node*> fingers = FingerTable_.getInner();
         uint8_t fingerStart = id_ + pow(2, i); //returns start of finger i+1 (NOT 1)
         // if (finger[i+1].start is in [n, finger[i].node))
-        printf("INIT FINGER TABLE FOR LOOP\n");
+        // printf("INIT FINGER TABLE FOR LOOP\n");
         if(between(id_, fingers[i]->getID(), fingerStart, true, false)){
             // finger[i+1].node = finger[i].node;
             FingerTable_.set(i+1, fingers[i]);
@@ -122,18 +114,19 @@ void Node::init_finger_table(Node* node){
     }
 }
 
-// update all nodes whose finger
-// // tables should refer to n
+// update all nodes whose finger tables should refer to n
 void Node::update_others(){
     for(int i=1; i<=BITLENGTH; i++){
         Node *p = findPredecessor(this->getID()-pow(2,i-1));
+        printf("Updating others called from %d\n", p->getID());
         p->update_finger_table(this, i); 
     }
 }
 
 void Node::update_finger_table(Node* s, uint8_t i){
+    printf("Updating Finger Table. S: %d, i: %d\n\n", s->getID(), i);
     if( between(this->getID(), FingerTable_.get(i)->getID(), s->getID(), true, false) ){
-        printf("UPDATE FINGER TABLE LOOP\n");
+        // printf("UPDATE FINGER TABLE LOOP\n");
         FingerTable_.set(i, s);
         Node* p = predecessor;
         p->update_finger_table(s, i);
@@ -153,7 +146,6 @@ void Node::join(Node *node)
 
     if (node)
     {
-        FingerTable_.initInnerFT(NULL);
         init_finger_table(node);
         update_others();
 
@@ -168,8 +160,7 @@ void Node::join(Node *node)
         
     }
     // First node in network
-    else
-    {
+    else{
         FingerTable_.initInnerFT(node);
         successor = this;
         predecessor = this;
@@ -180,6 +171,10 @@ void Node::join(Node *node)
         }
     }
 
+    
+    if (node){
+        node->prettyPrint();
+    }
     FingerTable_.prettyPrint(this);
 }
 

@@ -40,6 +40,11 @@ public:
 		innerFingerTable_ = std::vector<Node*>(BITLENGTH + 1, node);
 	}
 
+	void initInnerFT() {
+		// finger table starts at 1
+		innerFingerTable_ = std::vector<Node*>(BITLENGTH + 1);
+	}
+
 	uint8_t getID(){
 		return nodeId_;
 	}
@@ -74,6 +79,7 @@ public:
 	static uint8_t nodeCnt;
 	Node(uint8_t id): id_(id){
 		FingerTable_ = FingerTable(id);
+		FingerTable_.initInnerFT();
 	}
 	Node() = default;
 	//TODO: implement node join function
