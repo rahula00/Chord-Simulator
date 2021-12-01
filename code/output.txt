@@ -1,0 +1,4054 @@
+----------Node ID:0----------
+Successor: 0 Predecessor: 0
+FingerTables:
+| k = 1 [ 1 , 2 )	succ. = 0 |
+| k = 2 [ 2 , 4 )	succ. = 0 |
+| k = 3 [ 4 , 8 )	succ. = 0 |
+| k = 4 [ 8 , 16 )	succ. = 0 |
+| k = 5 [ 16 , 32 )	succ. = 0 |
+| k = 6 [ 32 , 64 )	succ. = 0 |
+| k = 7 [ 64 , 128 )	succ. = 0 |
+| k = 8 [ 128 , 0 )	succ. = 0 |
+-----------------------------
+*****************************
+______________________
+FIND PRED of 30 LOOP 0 from node 0, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 30 LOOP 1 from node 0, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 30 LOOP 2 from node 0, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 30 LOOP 3 from node 0, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 29] for 0
+Key is NOT in between!
+0 is the pred of 30
+findSucc ID Param: 30
+SUCC ID: 0
+SUCC's SUCC ID: 0
+A IS 30 and aINC IS 1
+searching range [30, 255] for 32
+Key is in between!
+A IS 30 and aINC IS 1
+searching range [30, 255] for 34
+Key is in between!
+A IS 30 and aINC IS 1
+searching range [30, 255] for 38
+Key is in between!
+A IS 30 and aINC IS 1
+searching range [30, 255] for 46
+Key is in between!
+A IS 30 and aINC IS 1
+searching range [30, 255] for 62
+Key is in between!
+A IS 30 and aINC IS 1
+searching range [30, 255] for 94
+Key is in between!
+A IS 30 and aINC IS 1
+searching range [30, 255] for 158
+Key is in between!
+A IS 30 and aINC IS 0
+searching range [31, 255], [0, 0] for 29
+Key is NOT in between!
+______________________
+FIND PRED of 29 LOOP 0 from node 30, n'= 30
+______________________
+A IS 30 and aINC IS 0
+searching range [31, 255], [0, 28] for 0
+Key is in between!
+______________________
+FIND PRED of 29 LOOP 1 from node 30, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 29 LOOP 2 from node 30, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 29 LOOP 3 from node 30, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 28] for 0
+Key is NOT in between!
+0 is the pred of 29
+Updating others called from 0
+Updating Finger Table. S: 30, i: 1
+
+A IS 30 and aINC IS 0
+searching range [31, 255], [0, 0] for 28
+Key is NOT in between!
+______________________
+FIND PRED of 28 LOOP 0 from node 30, n'= 30
+______________________
+A IS 30 and aINC IS 0
+searching range [31, 255], [0, 27] for 0
+Key is in between!
+______________________
+FIND PRED of 28 LOOP 1 from node 30, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 28 LOOP 2 from node 30, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 28 LOOP 3 from node 30, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 27] for 0
+Key is NOT in between!
+0 is the pred of 28
+Updating others called from 0
+Updating Finger Table. S: 30, i: 2
+
+A IS 30 and aINC IS 0
+searching range [31, 255], [0, 0] for 26
+Key is NOT in between!
+______________________
+FIND PRED of 26 LOOP 0 from node 30, n'= 30
+______________________
+A IS 30 and aINC IS 0
+searching range [31, 255], [0, 25] for 0
+Key is in between!
+______________________
+FIND PRED of 26 LOOP 1 from node 30, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 26 LOOP 2 from node 30, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 26 LOOP 3 from node 30, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 25] for 0
+Key is NOT in between!
+0 is the pred of 26
+Updating others called from 0
+Updating Finger Table. S: 30, i: 3
+
+A IS 30 and aINC IS 0
+searching range [31, 255], [0, 0] for 22
+Key is NOT in between!
+______________________
+FIND PRED of 22 LOOP 0 from node 30, n'= 30
+______________________
+A IS 30 and aINC IS 0
+searching range [31, 255], [0, 21] for 0
+Key is in between!
+______________________
+FIND PRED of 22 LOOP 1 from node 30, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 22 LOOP 2 from node 30, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 22 LOOP 3 from node 30, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 21] for 0
+Key is NOT in between!
+0 is the pred of 22
+Updating others called from 0
+Updating Finger Table. S: 30, i: 4
+
+A IS 30 and aINC IS 0
+searching range [31, 255], [0, 0] for 14
+Key is NOT in between!
+______________________
+FIND PRED of 14 LOOP 0 from node 30, n'= 30
+______________________
+A IS 30 and aINC IS 0
+searching range [31, 255], [0, 13] for 0
+Key is in between!
+______________________
+FIND PRED of 14 LOOP 1 from node 30, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 14 LOOP 2 from node 30, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 14 LOOP 3 from node 30, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 13] for 0
+Key is NOT in between!
+0 is the pred of 14
+Updating others called from 0
+Updating Finger Table. S: 30, i: 5
+
+A IS 30 and aINC IS 0
+searching range [31, 255], [0, 0] for 254
+Key is in between!
+30 is the pred of 254
+Updating others called from 30
+Updating Finger Table. S: 30, i: 6
+
+A IS 30 and aINC IS 1
+searching range [30, 255] for 30
+Key is in between!
+Updating Finger Table. S: 30, i: 6
+
+A IS 30 and aINC IS 0
+searching range [31, 255], [0, 0] for 222
+Key is in between!
+30 is the pred of 222
+Updating others called from 30
+Updating Finger Table. S: 30, i: 7
+
+A IS 30 and aINC IS 1
+searching range [30, 255] for 30
+Key is in between!
+Updating Finger Table. S: 30, i: 7
+
+A IS 30 and aINC IS 0
+searching range [31, 255], [0, 0] for 158
+Key is in between!
+30 is the pred of 158
+Updating others called from 30
+Updating Finger Table. S: 30, i: 8
+
+A IS 30 and aINC IS 1
+searching range [30, 255] for 30
+Key is in between!
+Updating Finger Table. S: 30, i: 8
+
+----------Node ID:0----------
+Successor: 0 Predecessor: 30
+FingerTables:
+| k = 1 [ 1 , 2 )	succ. = 0 |
+| k = 2 [ 2 , 4 )	succ. = 0 |
+| k = 3 [ 4 , 8 )	succ. = 0 |
+| k = 4 [ 8 , 16 )	succ. = 0 |
+| k = 5 [ 16 , 32 )	succ. = 0 |
+| k = 6 [ 32 , 64 )	succ. = 0 |
+| k = 7 [ 64 , 128 )	succ. = 0 |
+| k = 8 [ 128 , 0 )	succ. = 0 |
+-----------------------------
+*****************************
+----------Node ID:30----------
+Successor: 0 Predecessor: 0
+FingerTables:
+| k = 1 [ 31 , 32 )	succ. = 0 |
+| k = 2 [ 32 , 34 )	succ. = 0 |
+| k = 3 [ 34 , 38 )	succ. = 0 |
+| k = 4 [ 38 , 46 )	succ. = 0 |
+| k = 5 [ 46 , 62 )	succ. = 0 |
+| k = 6 [ 62 , 94 )	succ. = 30 |
+| k = 7 [ 94 , 158 )	succ. = 30 |
+| k = 8 [ 158 , 30 )	succ. = 30 |
+-----------------------------
+*****************************
+A IS 30 and aINC IS 0
+searching range [31, 255], [0, 0] for 65
+Key is in between!
+30 is the pred of 65
+findSucc ID Param: 65
+SUCC ID: 30
+SUCC's SUCC ID: 0
+A IS 65 and aINC IS 1
+searching range [65, 255] for 67
+Key is in between!
+A IS 65 and aINC IS 1
+searching range [65, 255] for 69
+Key is in between!
+A IS 65 and aINC IS 1
+searching range [65, 255] for 73
+Key is in between!
+A IS 65 and aINC IS 1
+searching range [65, 255] for 81
+Key is in between!
+A IS 65 and aINC IS 1
+searching range [65, 255] for 97
+Key is in between!
+A IS 65 and aINC IS 1
+searching range [65, 255] for 129
+Key is in between!
+A IS 65 and aINC IS 1
+searching range [65, 255] for 193
+Key is in between!
+A IS 65 and aINC IS 0
+searching range [66, 255], [0, 0] for 64
+Key is NOT in between!
+______________________
+FIND PRED of 64 LOOP 0 from node 65, n'= 65
+______________________
+A IS 65 and aINC IS 0
+searching range [66, 255], [0, 63] for 0
+Key is in between!
+______________________
+FIND PRED of 64 LOOP 1 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 64 LOOP 2 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 64 LOOP 3 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 63] for 0
+Key is NOT in between!
+0 is the pred of 64
+Updating others called from 0
+Updating Finger Table. S: 65, i: 1
+
+A IS 65 and aINC IS 0
+searching range [66, 255], [0, 0] for 63
+Key is NOT in between!
+______________________
+FIND PRED of 63 LOOP 0 from node 65, n'= 65
+______________________
+A IS 65 and aINC IS 0
+searching range [66, 255], [0, 62] for 0
+Key is in between!
+______________________
+FIND PRED of 63 LOOP 1 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 63 LOOP 2 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 63 LOOP 3 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 62] for 0
+Key is NOT in between!
+0 is the pred of 63
+Updating others called from 0
+Updating Finger Table. S: 65, i: 2
+
+A IS 65 and aINC IS 0
+searching range [66, 255], [0, 0] for 61
+Key is NOT in between!
+______________________
+FIND PRED of 61 LOOP 0 from node 65, n'= 65
+______________________
+A IS 65 and aINC IS 0
+searching range [66, 255], [0, 60] for 0
+Key is in between!
+______________________
+FIND PRED of 61 LOOP 1 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 61 LOOP 2 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 61 LOOP 3 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 60] for 0
+Key is NOT in between!
+0 is the pred of 61
+Updating others called from 0
+Updating Finger Table. S: 65, i: 3
+
+A IS 65 and aINC IS 0
+searching range [66, 255], [0, 0] for 57
+Key is NOT in between!
+______________________
+FIND PRED of 57 LOOP 0 from node 65, n'= 65
+______________________
+A IS 65 and aINC IS 0
+searching range [66, 255], [0, 56] for 0
+Key is in between!
+______________________
+FIND PRED of 57 LOOP 1 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 57 LOOP 2 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 57 LOOP 3 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 56] for 0
+Key is NOT in between!
+0 is the pred of 57
+Updating others called from 0
+Updating Finger Table. S: 65, i: 4
+
+A IS 65 and aINC IS 0
+searching range [66, 255], [0, 0] for 49
+Key is NOT in between!
+______________________
+FIND PRED of 49 LOOP 0 from node 65, n'= 65
+______________________
+A IS 65 and aINC IS 0
+searching range [66, 255], [0, 48] for 0
+Key is in between!
+______________________
+FIND PRED of 49 LOOP 1 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 49 LOOP 2 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 49 LOOP 3 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 48] for 0
+Key is NOT in between!
+0 is the pred of 49
+Updating others called from 0
+Updating Finger Table. S: 65, i: 5
+
+A IS 65 and aINC IS 0
+searching range [66, 255], [0, 0] for 33
+Key is NOT in between!
+______________________
+FIND PRED of 33 LOOP 0 from node 65, n'= 65
+______________________
+A IS 65 and aINC IS 0
+searching range [66, 255], [0, 32] for 0
+Key is in between!
+______________________
+FIND PRED of 33 LOOP 1 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 33 LOOP 2 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 33 LOOP 3 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 32] for 0
+Key is NOT in between!
+0 is the pred of 33
+Updating others called from 0
+Updating Finger Table. S: 65, i: 6
+
+A IS 65 and aINC IS 0
+searching range [66, 255], [0, 0] for 1
+Key is NOT in between!
+______________________
+FIND PRED of 1 LOOP 0 from node 65, n'= 65
+______________________
+A IS 65 and aINC IS 0
+searching range [66, 255], [0, 0] for 0
+Key is in between!
+______________________
+FIND PRED of 1 LOOP 1 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 255], [0, 0] for 0
+Key is in between!
+______________________
+FIND PRED of 1 LOOP 2 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 255], [0, 0] for 0
+Key is in between!
+______________________
+FIND PRED of 1 LOOP 3 from node 65, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 255], [0, 0] for 0
+Key is in between!
+0 is the pred of 1
+Updating others called from 0
+Updating Finger Table. S: 65, i: 7
+
+A IS 65 and aINC IS 0
+searching range [66, 255], [0, 0] for 193
+Key is in between!
+65 is the pred of 193
+Updating others called from 65
+Updating Finger Table. S: 65, i: 8
+
+A IS 65 and aINC IS 1
+searching range [65, 255] for 65
+Key is in between!
+Updating Finger Table. S: 65, i: 8
+
+----------Node ID:30----------
+Successor: 0 Predecessor: 0
+FingerTables:
+| k = 1 [ 31 , 32 )	succ. = 0 |
+| k = 2 [ 32 , 34 )	succ. = 0 |
+| k = 3 [ 34 , 38 )	succ. = 0 |
+| k = 4 [ 38 , 46 )	succ. = 0 |
+| k = 5 [ 46 , 62 )	succ. = 0 |
+| k = 6 [ 62 , 94 )	succ. = 30 |
+| k = 7 [ 94 , 158 )	succ. = 30 |
+| k = 8 [ 158 , 30 )	succ. = 30 |
+-----------------------------
+*****************************
+----------Node ID:65----------
+Successor: 0 Predecessor: 30
+FingerTables:
+| k = 1 [ 66 , 67 )	succ. = 0 |
+| k = 2 [ 67 , 69 )	succ. = 0 |
+| k = 3 [ 69 , 73 )	succ. = 0 |
+| k = 4 [ 73 , 81 )	succ. = 0 |
+| k = 5 [ 81 , 97 )	succ. = 0 |
+| k = 6 [ 97 , 129 )	succ. = 0 |
+| k = 7 [ 129 , 193 )	succ. = 0 |
+| k = 8 [ 193 , 65 )	succ. = 65 |
+-----------------------------
+*****************************
+A IS 65 and aINC IS 0
+searching range [66, 255], [0, 0] for 110
+Key is in between!
+65 is the pred of 110
+findSucc ID Param: 110
+SUCC ID: 65
+SUCC's SUCC ID: 0
+A IS 110 and aINC IS 1
+searching range [110, 255] for 112
+Key is in between!
+A IS 110 and aINC IS 1
+searching range [110, 255] for 114
+Key is in between!
+A IS 110 and aINC IS 1
+searching range [110, 255] for 118
+Key is in between!
+A IS 110 and aINC IS 1
+searching range [110, 255] for 126
+Key is in between!
+A IS 110 and aINC IS 1
+searching range [110, 255] for 142
+Key is in between!
+A IS 110 and aINC IS 1
+searching range [110, 255] for 174
+Key is in between!
+A IS 110 and aINC IS 1
+searching range [110, 255] for 238
+Key is in between!
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 0] for 109
+Key is NOT in between!
+______________________
+FIND PRED of 109 LOOP 0 from node 110, n'= 110
+______________________
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 108] for 0
+Key is in between!
+______________________
+FIND PRED of 109 LOOP 1 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 109 LOOP 2 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 109 LOOP 3 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 108] for 0
+Key is NOT in between!
+0 is the pred of 109
+Updating others called from 0
+Updating Finger Table. S: 110, i: 1
+
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 0] for 108
+Key is NOT in between!
+______________________
+FIND PRED of 108 LOOP 0 from node 110, n'= 110
+______________________
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 107] for 0
+Key is in between!
+______________________
+FIND PRED of 108 LOOP 1 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 108 LOOP 2 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 108 LOOP 3 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 107] for 0
+Key is NOT in between!
+0 is the pred of 108
+Updating others called from 0
+Updating Finger Table. S: 110, i: 2
+
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 0] for 106
+Key is NOT in between!
+______________________
+FIND PRED of 106 LOOP 0 from node 110, n'= 110
+______________________
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 105] for 0
+Key is in between!
+______________________
+FIND PRED of 106 LOOP 1 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 106 LOOP 2 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 106 LOOP 3 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 105] for 0
+Key is NOT in between!
+0 is the pred of 106
+Updating others called from 0
+Updating Finger Table. S: 110, i: 3
+
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 0] for 102
+Key is NOT in between!
+______________________
+FIND PRED of 102 LOOP 0 from node 110, n'= 110
+______________________
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 101] for 0
+Key is in between!
+______________________
+FIND PRED of 102 LOOP 1 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 102 LOOP 2 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 102 LOOP 3 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+0 is the pred of 102
+Updating others called from 0
+Updating Finger Table. S: 110, i: 4
+
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 0] for 94
+Key is NOT in between!
+______________________
+FIND PRED of 94 LOOP 0 from node 110, n'= 110
+______________________
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 93] for 0
+Key is in between!
+______________________
+FIND PRED of 94 LOOP 1 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 94 LOOP 2 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 94 LOOP 3 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 93] for 0
+Key is NOT in between!
+0 is the pred of 94
+Updating others called from 0
+Updating Finger Table. S: 110, i: 5
+
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 0] for 78
+Key is NOT in between!
+______________________
+FIND PRED of 78 LOOP 0 from node 110, n'= 110
+______________________
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 77] for 0
+Key is in between!
+______________________
+FIND PRED of 78 LOOP 1 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 78 LOOP 2 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 78 LOOP 3 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 77] for 0
+Key is NOT in between!
+0 is the pred of 78
+Updating others called from 0
+Updating Finger Table. S: 110, i: 6
+
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 0] for 46
+Key is NOT in between!
+______________________
+FIND PRED of 46 LOOP 0 from node 110, n'= 110
+______________________
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 45] for 0
+Key is in between!
+______________________
+FIND PRED of 46 LOOP 1 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 46 LOOP 2 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 46 LOOP 3 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 45] for 0
+Key is NOT in between!
+0 is the pred of 46
+Updating others called from 0
+Updating Finger Table. S: 110, i: 7
+
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 0] for 238
+Key is in between!
+110 is the pred of 238
+Updating others called from 110
+Updating Finger Table. S: 110, i: 8
+
+A IS 110 and aINC IS 1
+searching range [110, 255] for 110
+Key is in between!
+Updating Finger Table. S: 110, i: 8
+
+----------Node ID:65----------
+Successor: 0 Predecessor: 30
+FingerTables:
+| k = 1 [ 66 , 67 )	succ. = 0 |
+| k = 2 [ 67 , 69 )	succ. = 0 |
+| k = 3 [ 69 , 73 )	succ. = 0 |
+| k = 4 [ 73 , 81 )	succ. = 0 |
+| k = 5 [ 81 , 97 )	succ. = 0 |
+| k = 6 [ 97 , 129 )	succ. = 0 |
+| k = 7 [ 129 , 193 )	succ. = 0 |
+| k = 8 [ 193 , 65 )	succ. = 65 |
+-----------------------------
+*****************************
+----------Node ID:110----------
+Successor: 0 Predecessor: 65
+FingerTables:
+| k = 1 [ 111 , 112 )	succ. = 0 |
+| k = 2 [ 112 , 114 )	succ. = 0 |
+| k = 3 [ 114 , 118 )	succ. = 0 |
+| k = 4 [ 118 , 126 )	succ. = 0 |
+| k = 5 [ 126 , 142 )	succ. = 0 |
+| k = 6 [ 142 , 174 )	succ. = 0 |
+| k = 7 [ 174 , 238 )	succ. = 0 |
+| k = 8 [ 238 , 110 )	succ. = 110 |
+-----------------------------
+*****************************
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 0] for 160
+Key is in between!
+110 is the pred of 160
+findSucc ID Param: 160
+SUCC ID: 110
+SUCC's SUCC ID: 0
+A IS 160 and aINC IS 1
+searching range [160, 255] for 162
+Key is in between!
+A IS 160 and aINC IS 1
+searching range [160, 255] for 164
+Key is in between!
+A IS 160 and aINC IS 1
+searching range [160, 255] for 168
+Key is in between!
+A IS 160 and aINC IS 1
+searching range [160, 255] for 176
+Key is in between!
+A IS 160 and aINC IS 1
+searching range [160, 255] for 192
+Key is in between!
+A IS 160 and aINC IS 1
+searching range [160, 255] for 224
+Key is in between!
+A IS 160 and aINC IS 1
+searching range [160, 255] for 32
+Key is NOT in between!
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 0] for 32
+Key is NOT in between!
+______________________
+FIND PRED of 32 LOOP 0 from node 110, n'= 110
+______________________
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 31] for 110
+Key is NOT in between!
+A IS 110 and aINC IS 0
+searching range [111, 255], [0, 31] for 0
+Key is in between!
+______________________
+FIND PRED of 32 LOOP 1 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 32 LOOP 2 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 32 LOOP 3 from node 110, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+0 is the pred of 32
+findSucc ID Param: 32
+SUCC ID: 0
+SUCC's SUCC ID: 0
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 0] for 159
+Key is NOT in between!
+______________________
+FIND PRED of 159 LOOP 0 from node 160, n'= 160
+______________________
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 158] for 0
+Key is in between!
+______________________
+FIND PRED of 159 LOOP 1 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 159 LOOP 2 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 159 LOOP 3 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 158] for 0
+Key is NOT in between!
+0 is the pred of 159
+Updating others called from 0
+Updating Finger Table. S: 160, i: 1
+
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 0] for 158
+Key is NOT in between!
+______________________
+FIND PRED of 158 LOOP 0 from node 160, n'= 160
+______________________
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 157] for 0
+Key is in between!
+______________________
+FIND PRED of 158 LOOP 1 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 158 LOOP 2 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 158 LOOP 3 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 157] for 0
+Key is NOT in between!
+0 is the pred of 158
+Updating others called from 0
+Updating Finger Table. S: 160, i: 2
+
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 0] for 156
+Key is NOT in between!
+______________________
+FIND PRED of 156 LOOP 0 from node 160, n'= 160
+______________________
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 155] for 0
+Key is in between!
+______________________
+FIND PRED of 156 LOOP 1 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 156 LOOP 2 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 156 LOOP 3 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 155] for 0
+Key is NOT in between!
+0 is the pred of 156
+Updating others called from 0
+Updating Finger Table. S: 160, i: 3
+
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 0] for 152
+Key is NOT in between!
+______________________
+FIND PRED of 152 LOOP 0 from node 160, n'= 160
+______________________
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 151] for 0
+Key is in between!
+______________________
+FIND PRED of 152 LOOP 1 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 152 LOOP 2 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 152 LOOP 3 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 151] for 0
+Key is NOT in between!
+0 is the pred of 152
+Updating others called from 0
+Updating Finger Table. S: 160, i: 4
+
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 0] for 144
+Key is NOT in between!
+______________________
+FIND PRED of 144 LOOP 0 from node 160, n'= 160
+______________________
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 143] for 0
+Key is in between!
+______________________
+FIND PRED of 144 LOOP 1 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 144 LOOP 2 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 144 LOOP 3 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 143] for 0
+Key is NOT in between!
+0 is the pred of 144
+Updating others called from 0
+Updating Finger Table. S: 160, i: 5
+
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 0] for 128
+Key is NOT in between!
+______________________
+FIND PRED of 128 LOOP 0 from node 160, n'= 160
+______________________
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 127] for 0
+Key is in between!
+______________________
+FIND PRED of 128 LOOP 1 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 128 LOOP 2 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 128 LOOP 3 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 127] for 0
+Key is NOT in between!
+0 is the pred of 128
+Updating others called from 0
+Updating Finger Table. S: 160, i: 6
+
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 0] for 96
+Key is NOT in between!
+______________________
+FIND PRED of 96 LOOP 0 from node 160, n'= 160
+______________________
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 95] for 0
+Key is in between!
+______________________
+FIND PRED of 96 LOOP 1 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 96 LOOP 2 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 96 LOOP 3 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 95] for 0
+Key is NOT in between!
+0 is the pred of 96
+Updating others called from 0
+Updating Finger Table. S: 160, i: 7
+
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 0] for 32
+Key is NOT in between!
+______________________
+FIND PRED of 32 LOOP 0 from node 160, n'= 160
+______________________
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 31] for 0
+Key is in between!
+______________________
+FIND PRED of 32 LOOP 1 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 32 LOOP 2 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 32 LOOP 3 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 31] for 0
+Key is NOT in between!
+0 is the pred of 32
+Updating others called from 0
+Updating Finger Table. S: 160, i: 8
+
+----------Node ID:110----------
+Successor: 0 Predecessor: 65
+FingerTables:
+| k = 1 [ 111 , 112 )	succ. = 0 |
+| k = 2 [ 112 , 114 )	succ. = 0 |
+| k = 3 [ 114 , 118 )	succ. = 0 |
+| k = 4 [ 118 , 126 )	succ. = 0 |
+| k = 5 [ 126 , 142 )	succ. = 0 |
+| k = 6 [ 142 , 174 )	succ. = 0 |
+| k = 7 [ 174 , 238 )	succ. = 0 |
+| k = 8 [ 238 , 110 )	succ. = 110 |
+-----------------------------
+*****************************
+----------Node ID:160----------
+Successor: 0 Predecessor: 110
+FingerTables:
+| k = 1 [ 161 , 162 )	succ. = 0 |
+| k = 2 [ 162 , 164 )	succ. = 0 |
+| k = 3 [ 164 , 168 )	succ. = 0 |
+| k = 4 [ 168 , 176 )	succ. = 0 |
+| k = 5 [ 176 , 192 )	succ. = 0 |
+| k = 6 [ 192 , 224 )	succ. = 0 |
+| k = 7 [ 224 , 32 )	succ. = 0 |
+| k = 8 [ 32 , 160 )	succ. = 0 |
+-----------------------------
+*****************************
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 0] for 230
+Key is in between!
+160 is the pred of 230
+findSucc ID Param: 230
+SUCC ID: 160
+SUCC's SUCC ID: 0
+A IS 230 and aINC IS 1
+searching range [230, 255] for 232
+Key is in between!
+A IS 230 and aINC IS 1
+searching range [230, 255] for 234
+Key is in between!
+A IS 230 and aINC IS 1
+searching range [230, 255] for 238
+Key is in between!
+A IS 230 and aINC IS 1
+searching range [230, 255] for 246
+Key is in between!
+A IS 230 and aINC IS 1
+searching range [230, 255] for 6
+Key is NOT in between!
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 0] for 6
+Key is NOT in between!
+______________________
+FIND PRED of 6 LOOP 0 from node 160, n'= 160
+______________________
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 5] for 0
+Key is in between!
+______________________
+FIND PRED of 6 LOOP 1 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 6 LOOP 2 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 6 LOOP 3 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 5] for 0
+Key is NOT in between!
+0 is the pred of 6
+findSucc ID Param: 6
+SUCC ID: 0
+SUCC's SUCC ID: 0
+A IS 230 and aINC IS 1
+searching range [230, 255] for 38
+Key is NOT in between!
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 0] for 38
+Key is NOT in between!
+______________________
+FIND PRED of 38 LOOP 0 from node 160, n'= 160
+______________________
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 37] for 0
+Key is in between!
+______________________
+FIND PRED of 38 LOOP 1 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 38 LOOP 2 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 38 LOOP 3 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 37] for 0
+Key is NOT in between!
+0 is the pred of 38
+findSucc ID Param: 38
+SUCC ID: 0
+SUCC's SUCC ID: 0
+A IS 230 and aINC IS 1
+searching range [230, 255] for 102
+Key is NOT in between!
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 0] for 102
+Key is NOT in between!
+______________________
+FIND PRED of 102 LOOP 0 from node 160, n'= 160
+______________________
+A IS 160 and aINC IS 0
+searching range [161, 255], [0, 101] for 0
+Key is in between!
+______________________
+FIND PRED of 102 LOOP 1 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 102 LOOP 2 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 102 LOOP 3 from node 160, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+0 is the pred of 102
+findSucc ID Param: 102
+SUCC ID: 0
+SUCC's SUCC ID: 0
+A IS 230 and aINC IS 0
+searching range [231, 255], [0, 0] for 229
+Key is NOT in between!
+______________________
+FIND PRED of 229 LOOP 0 from node 230, n'= 230
+______________________
+A IS 230 and aINC IS 0
+searching range [231, 255], [0, 228] for 0
+Key is in between!
+______________________
+FIND PRED of 229 LOOP 1 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 229 LOOP 2 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 229 LOOP 3 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 228] for 0
+Key is NOT in between!
+0 is the pred of 229
+Updating others called from 0
+Updating Finger Table. S: 230, i: 1
+
+A IS 230 and aINC IS 0
+searching range [231, 255], [0, 0] for 228
+Key is NOT in between!
+______________________
+FIND PRED of 228 LOOP 0 from node 230, n'= 230
+______________________
+A IS 230 and aINC IS 0
+searching range [231, 255], [0, 227] for 0
+Key is in between!
+______________________
+FIND PRED of 228 LOOP 1 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 228 LOOP 2 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 228 LOOP 3 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 227] for 0
+Key is NOT in between!
+0 is the pred of 228
+Updating others called from 0
+Updating Finger Table. S: 230, i: 2
+
+A IS 230 and aINC IS 0
+searching range [231, 255], [0, 0] for 226
+Key is NOT in between!
+______________________
+FIND PRED of 226 LOOP 0 from node 230, n'= 230
+______________________
+A IS 230 and aINC IS 0
+searching range [231, 255], [0, 225] for 0
+Key is in between!
+______________________
+FIND PRED of 226 LOOP 1 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 226 LOOP 2 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 226 LOOP 3 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 225] for 0
+Key is NOT in between!
+0 is the pred of 226
+Updating others called from 0
+Updating Finger Table. S: 230, i: 3
+
+A IS 230 and aINC IS 0
+searching range [231, 255], [0, 0] for 222
+Key is NOT in between!
+______________________
+FIND PRED of 222 LOOP 0 from node 230, n'= 230
+______________________
+A IS 230 and aINC IS 0
+searching range [231, 255], [0, 221] for 0
+Key is in between!
+______________________
+FIND PRED of 222 LOOP 1 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 222 LOOP 2 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 222 LOOP 3 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 221] for 0
+Key is NOT in between!
+0 is the pred of 222
+Updating others called from 0
+Updating Finger Table. S: 230, i: 4
+
+A IS 230 and aINC IS 0
+searching range [231, 255], [0, 0] for 214
+Key is NOT in between!
+______________________
+FIND PRED of 214 LOOP 0 from node 230, n'= 230
+______________________
+A IS 230 and aINC IS 0
+searching range [231, 255], [0, 213] for 0
+Key is in between!
+______________________
+FIND PRED of 214 LOOP 1 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 214 LOOP 2 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 214 LOOP 3 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 213] for 0
+Key is NOT in between!
+0 is the pred of 214
+Updating others called from 0
+Updating Finger Table. S: 230, i: 5
+
+A IS 230 and aINC IS 0
+searching range [231, 255], [0, 0] for 198
+Key is NOT in between!
+______________________
+FIND PRED of 198 LOOP 0 from node 230, n'= 230
+______________________
+A IS 230 and aINC IS 0
+searching range [231, 255], [0, 197] for 0
+Key is in between!
+______________________
+FIND PRED of 198 LOOP 1 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 198 LOOP 2 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 198 LOOP 3 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 197] for 0
+Key is NOT in between!
+0 is the pred of 198
+Updating others called from 0
+Updating Finger Table. S: 230, i: 6
+
+A IS 230 and aINC IS 0
+searching range [231, 255], [0, 0] for 166
+Key is NOT in between!
+______________________
+FIND PRED of 166 LOOP 0 from node 230, n'= 230
+______________________
+A IS 230 and aINC IS 0
+searching range [231, 255], [0, 165] for 0
+Key is in between!
+______________________
+FIND PRED of 166 LOOP 1 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 166 LOOP 2 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 166 LOOP 3 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 165] for 0
+Key is NOT in between!
+0 is the pred of 166
+Updating others called from 0
+Updating Finger Table. S: 230, i: 7
+
+A IS 230 and aINC IS 0
+searching range [231, 255], [0, 0] for 102
+Key is NOT in between!
+______________________
+FIND PRED of 102 LOOP 0 from node 230, n'= 230
+______________________
+A IS 230 and aINC IS 0
+searching range [231, 255], [0, 101] for 0
+Key is in between!
+______________________
+FIND PRED of 102 LOOP 1 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 102 LOOP 2 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+______________________
+FIND PRED of 102 LOOP 3 from node 230, n'= 0
+______________________
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+A IS 0 and aINC IS 0
+searching range [1, 101] for 0
+Key is NOT in between!
+0 is the pred of 102
+Updating others called from 0
+Updating Finger Table. S: 230, i: 8
+
+----------Node ID:160----------
+Successor: 0 Predecessor: 110
+FingerTables:
+| k = 1 [ 161 , 162 )	succ. = 0 |
+| k = 2 [ 162 , 164 )	succ. = 0 |
+| k = 3 [ 164 , 168 )	succ. = 0 |
+| k = 4 [ 168 , 176 )	succ. = 0 |
+| k = 5 [ 176 , 192 )	succ. = 0 |
+| k = 6 [ 192 , 224 )	succ. = 0 |
+| k = 7 [ 224 , 32 )	succ. = 0 |
+| k = 8 [ 32 , 160 )	succ. = 0 |
+-----------------------------
+*****************************
+----------Node ID:230----------
+Successor: 0 Predecessor: 160
+FingerTables:
+| k = 1 [ 231 , 232 )	succ. = 0 |
+| k = 2 [ 232 , 234 )	succ. = 0 |
+| k = 3 [ 234 , 238 )	succ. = 0 |
+| k = 4 [ 238 , 246 )	succ. = 0 |
+| k = 5 [ 246 , 6 )	succ. = 0 |
+| k = 6 [ 6 , 38 )	succ. = 0 |
+| k = 7 [ 38 , 102 )	succ. = 0 |
+| k = 8 [ 102 , 230 )	succ. = 0 |
+-----------------------------
+*****************************

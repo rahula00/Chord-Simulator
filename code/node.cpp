@@ -61,27 +61,30 @@ Node* Node::findSuccessor(uint8_t id)
 
 Node *Node::findPredecessor(uint8_t id)
 {
-    Node *temp = this;
+    Node *nP = this;
     int loopCnt = 0;
+    if(id == id_) {
+        return this;
+    }
     // while ( !between(temp->getID(), temp->getSuccessor()->getID(), id, true, true) ) {
-    while ( !between(temp->getSuccessor()->getID(), temp->getID(), id, false, true) ) {
-        printf("FIND PRED LOOP\n");
-        temp = temp->closestPrecedingFinger(id);
+    while ( !between(nP->getID(), nP->getSuccessor()->getID(), id, false, true) ) {
+        printf("______________________\nFIND PRED of %d LOOP %d from node %d, n\'= %d\n______________________\n", (int)id, loopCnt, (int) id_, (int) nP->getID());
+        nP = nP->closestPrecedingFinger(id);
         loopCnt++;
-        if(loopCnt > 10){
-            // break;
+        if(loopCnt > 3){
+            break;
         }
     }
 
-    cout << (int) temp->getID() << " is the pred of " << (int) id << endl;
-    return temp;
+    cout << (int) nP->getID() << " is the pred of " << (int) id << endl;
+    return nP;
 }
 
 Node *Node::closestPrecedingFinger(uint8_t id)
-{
+{   
     std::vector<Node*> fingers = FingerTable_.getInner();
     for(int i=BITLENGTH; i>0; --i) {
-        printf("closestPrecedingFinger loop iter: %d\n", i);
+        //printf("\nclosestPrecedingFinger loop iter: %d\n", i);
         // printf("Searching between %d and %d\n", this->getID(), id);
         fflush(stdout);
 
@@ -129,7 +132,7 @@ void Node::init_finger_table(Node* node){
 // update all nodes whose finger tables should refer to n
 void Node::update_others(){
     for(int i=1; i<=BITLENGTH; i++){
-        Node *p = findPredecessor(this->getID()-pow(2,i-1));
+        Node *p = findPredecessor(this->getID()-pow(2,(i-1)));
         printf("Updating others called from %d\n", p->getID());
         p->update_finger_table(this, i); 
     }
