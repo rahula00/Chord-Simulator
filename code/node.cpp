@@ -7,9 +7,14 @@ using namespace std;
 bool between(uint8_t a, uint8_t b, uint8_t key, bool aInc, bool bInc){
     // if not a inclusive, increase a by 1
     if(a == b){
-        return (key == a) && (aInc || bInc);
+        // (0,0] returns FALSE
+        if((key == a) && (aInc && bInc)){
+            printf("key %d matches a and b\n", key);
+        }
+        return (key == a) && (aInc && bInc);
     }
 
+    printf("A IS %d and aINC IS %d\n", a, aInc);
 
     if(!aInc){
         a++;
@@ -57,9 +62,15 @@ Node* Node::findSuccessor(uint8_t id)
 Node *Node::findPredecessor(uint8_t id)
 {
     Node *temp = this;
-    while ( !between(temp->getID(), temp->getSuccessor()->getID(), id, false, true) ) {
-        // printf("FIND PRED LOOP\n");
+    int loopCnt = 0;
+    // while ( !between(temp->getID(), temp->getSuccessor()->getID(), id, true, true) ) {
+    while ( !between(temp->getSuccessor()->getID(), temp->getID(), id, false, true) ) {
+        printf("FIND PRED LOOP\n");
         temp = temp->closestPrecedingFinger(id);
+        loopCnt++;
+        if(loopCnt > 10){
+            break;
+        }
     }
 
     cout << (int) temp->getID() << " is the pred of " << (int) id << endl;
@@ -90,7 +101,7 @@ void Node::init_finger_table(Node* node){
     FingerTable_.set( 1, node->findSuccessor(fingerStart) );
 
     // ANTONE
-    //node->getFingerTable().set(1, this);
+    // node->getFingerTable().set(1, this);
     
     // predecessor = successor.predecessor;
     successor = FingerTable_.get(1);
