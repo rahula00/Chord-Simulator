@@ -116,11 +116,7 @@ public:
 	}
 
 	Node* getSuccessor() {
-		if(successor == NULL){
-			cerr << "Successor is null";
-			exit(EXIT_FAILURE);
-		}
-		return successor;
+		return FingerTable_.get(1);
 	}
 	Node* getPredecessor() {
 		if(predecessor == NULL){
@@ -130,7 +126,7 @@ public:
 		return predecessor;
 	}
 	void setSuccessor(Node* node) {
-		successor = node;
+		FingerTable_.set(1, node);
 	}
 	void setPredecessor(Node* node) {
 		predecessor = node;
