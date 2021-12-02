@@ -113,6 +113,7 @@ void Node::init_finger_table(Node* node) {
     predecessor = successor->predecessor;
 
     for(int i=1; i<BITLENGTH; i++){
+        printf("INIT FINGER TABLE ITER: %d\n", i);
         Node* finger_i_node = getNode(i);
         uint8_t n = id_;
         if( between(n, finger_i_node->getID(), getStart(i+1), true, false) ){
@@ -127,21 +128,29 @@ void Node::init_finger_table(Node* node) {
 
 // update all nodes whose finger tables should refer to n
 void Node::update_others(){
-
+    for(int i = 1; i <= BITLENGTH;  i++) {
+        Node* n = this;
+        Node* p = findPredecessor(n->getID() - pow(2,i-1));
+        p->update_finger_table(n, i);
+    }
 }
 
 void Node::update_finger_table(Node* s, uint8_t i){
-    
+    Node* n = this;
+    if(between(n->getID(), getNode(i)->getID(), s->getID(), true, false)){
+        FingerTable_.set(i, s);
+        Node* p = predecessor;
+        p->update_finger_table(s, i);
+    }
 }
 
 
 void Node::join(Node *node)
 {
-    if (node)
-    {
+    if (node) {
         init_finger_table(node); 
-    }
-    else{
+        update_others();
+    } else {
         predecessor = this;
         for (int i = 1; i < BITLENGTH + 1; i++){
             FingerTable_.set(i, this);
