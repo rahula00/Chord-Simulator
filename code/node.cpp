@@ -73,7 +73,7 @@ Node* Node::findPredecessor(uint8_t id) {
         printf("find pred loop %d,  nP = %d\n", loopCnt, nP->getID());
         nP = nP->closestPrecedingFinger(id);
         loopCnt++;
-        if(loopCnt > 9){
+        if(loopCnt > ){
             break;
         }
     }
@@ -110,12 +110,16 @@ Node* Node::getNode(uint8_t k){
 // n0 is an arbitrary node already in the network
 // n.init_finger_table(n0)
 void Node::init_finger_table(Node* node) {
+    Node* n = this;
+
     FingerTable_.set(1, node->findSuccessor(getStart(1)));
 
-    node->set(1, this);
+    node->set(1, n);
 
+    // Node* successor = getNode(1);
     Node* successor = FingerTable_.get(1);
     predecessor = successor->predecessor;
+    successor->predecessor = n;
 
     for(int i=1; i<BITLENGTH; i++){
         printf("INIT FINGER TABLE ITER: %d\n", i);
