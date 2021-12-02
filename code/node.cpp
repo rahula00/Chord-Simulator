@@ -3,58 +3,58 @@
 #include <cassert>
 using namespace std;
 
-uint8_t comp(uint8_t a, uint8_t b) {
-    if ( a > b ) {
-        return 1;
-    } else if (b > a) {
-        return 255; 
-     } else {
-         return 0;
-     }
-     
-}
-
 // checks if key is between vars a and b
 // uint8 range = [0, 255]
 bool between(uint8_t a, uint8_t b, uint8_t key, bool aInc, bool bInc){
     // if not a inclusive, increase a by 1
-    uint8_t left = (a + (1 * !aInc));
-    uint8_t right = (b - (1 * !bInc));
-    if(a == key && !aInc || b == key && !bInc) {
-        return false;
-    } 
-    printf("left: %d, right: %d\n", left, right);
-    switch(comp(a, b)) {
-        case 1:
-            printf("searching range [%d, 255], [0, %d] for %d\n", left, right, key);
-            if((key >= left && key <= 255) || (key >= 0 && key <= right)){
-                printf("TRUE\n");
-            }
-            else{
-                printf("FALSE\n");
-            }
-            return (key >= left && key <= 255) || (key >= 0 && key <= right);
-        case 255:
-            printf("searching range [%d, %d] for %d\n", left, right, key);
-            if(key >=  left && (key <= right)){
-                printf("TRUE\n");
-            }
-            else{
-                printf("FALSE\n");
-            }
-            return (key >=  left && (key <= right));
-        case 0:
-            printf("returning key %d == %d \n", key, a);
-            if(key == a){
-                printf("TRUE\n");
-            }
-            else{
-                printf("FALSE\n");
-            }
-            return (key == a);
-        default:
-            exit(1);
+    if(a == b){
+        // (0,0] returns FALSE
+        if((key == a) && (aInc && bInc)){
+            printf("key %d matches a and b\n", key);
+        }
+        else{
+            printf("key %d does not match %d and %d because of aInc and bInc vals\n", key, a, b);
+            return false;
+        }
+        return (key == a) && (aInc && bInc);
     }
+
+    // //printf("A IS %d and aINC IS %d\n", a, aInc);
+
+    if(!aInc){
+        a++;
+    }
+    // if not b inclusive, decrease b by 1
+    if(!bInc){
+        b--;
+    }
+    if (a > b){    
+            // //printf("a(%d) is greater than b(%d), key is %d\n", a, b, key);
+            printf("searching range [%d, 255], [0, %d] for %d\n", a, b, key);
+        if((key >= a) || (key <= b)){
+            printf("Key is in between!\n");
+        }
+        else{
+            printf("Key is NOT in between!\n");
+        }
+        return (key >= a) || (key <= b);
+    }
+    else if (b > a){
+        // //printf("a(%d) is smaller than b(%d), key is %d\n", a, b, key);
+        printf("searching range [%d, %d] for %d\n", a, b, key);
+        if((key >= a) && (key <= b)){
+            printf("Key is in between!\n");
+        }
+        else{
+            printf("Key is NOT in between!\n");
+        }
+        return (key >= a) && (key <= b);
+    }
+    else{
+        return key == a;
+    }
+
+    return false;
 }
 
 Node* Node::findSuccessor(uint8_t id) {
@@ -68,10 +68,12 @@ Node* Node::findPredecessor(uint8_t id) {
 
     int loopCnt = 0;
 
-    while( !between(nP->getID(), nP_successor->getID(), id, false, true) ){
+  
+    while( !between(nP->getID(), nP_successor->getID(), id, true, false) ){
+        printf("find pred loop %d,  nP = %d\n", loopCnt, nP->getID());
         nP = nP->closestPrecedingFinger(id);
         loopCnt++;
-        if(loopCnt>7){
+        if(loopCnt > 9){
             break;
         }
     }
@@ -109,6 +111,9 @@ Node* Node::getNode(uint8_t k){
 // n.init_finger_table(n0)
 void Node::init_finger_table(Node* node) {
     FingerTable_.set(1, node->findSuccessor(getStart(1)));
+
+    node->set(1, this);
+
     Node* successor = FingerTable_.get(1);
     predecessor = successor->predecessor;
 
@@ -116,7 +121,7 @@ void Node::init_finger_table(Node* node) {
         printf("INIT FINGER TABLE ITER: %d\n", i);
         Node* finger_i_node = getNode(i);
         uint8_t n = id_;
-        if( between(n, finger_i_node->getID(), getStart(i+1), true, false) ){
+        if( between(n, finger_i_node->getID(), getStart(i+1), false, false) ){
             FingerTable_.set(i+1, finger_i_node);
         }
         else{
@@ -131,13 +136,16 @@ void Node::update_others(){
     for(int i = 1; i <= BITLENGTH;  i++) {
         Node* n = this;
         Node* p = findPredecessor(n->getID() - pow(2,i-1));
+        printf("P IS: %d\n\n", p->getID());
         p->update_finger_table(n, i);
     }
 }
 
 void Node::update_finger_table(Node* s, uint8_t i){
     Node* n = this;
-    if(between(n->getID(), getNode(i)->getID(), s->getID(), true, false)){
+    // printf("UpdateFT: Checking Node: %d\n\n", this->getID());
+    if(between(n->getID(), getNode(i)->getID(), s->getID(), false, false)){
+        // printf("UPDATING NODE: %d\n\n", this->getID());
         FingerTable_.set(i, s);
         Node* p = predecessor;
         p->update_finger_table(s, i);

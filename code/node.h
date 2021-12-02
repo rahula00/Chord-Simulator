@@ -89,6 +89,10 @@ public:
 		return FingerTable_.get(index);
 	}
 
+	void set(size_t index, Node* node) {
+		FingerTable_.set(index, node);
+	}
+
 	FingerTable getFingerTable(){
 		return FingerTable_;
 	}
