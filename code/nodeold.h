@@ -37,6 +37,16 @@ public:
 
 	void prettyPrint(Node* node);
 
+	void initInnerFT(Node* node) {
+		// finger table starts at 1
+		innerFingerTable_ = std::vector<Node*>(BITLENGTH + 1, node);
+	}
+
+	void initInnerFT() {
+		// finger table starts at 1
+		innerFingerTable_ = std::vector<Node*>(BITLENGTH + 1);
+	}
+
 	uint8_t getID(){
 		return nodeId_;
 	}
@@ -85,17 +95,21 @@ public:
 	//TODO: implement DHT key deletion
 	void remove(uint8_t key);
 
+	Node* getNode(size_t i);
 	Node* get(size_t index) {
 		return FingerTable_.get(index);
 	}
 
+	void hack(Node* node){
+		this->successor = node;
+		FingerTable_.hack(node);
+	}
 	FingerTable getFingerTable(){
 		return FingerTable_;
 	}
 
 	void init_finger_table(Node* node);
-	uint8_t getStart(uint8_t id);
-	Node* getNode(uint8_t id);
+
 	void update_others();
 	void update_finger_table(Node* s, uint8_t i);
 
@@ -150,6 +164,7 @@ public:
 	
 
 private:
+	Node* successor;
 	Node* predecessor;
 	uint8_t id_;
 	FingerTable FingerTable_;
