@@ -42,21 +42,9 @@ public:
 		return nodeId_;
 	}
 
-
-	void setID(uint8_t id){
-		nodeId_ = id;
-	}
-
 	std::vector<Node*> getInner() {
 		return innerFingerTable_;
 	}
-
-	void hack(Node* node){
-		for(int i=1; i<6;i++){
-			innerFingerTable_[i] = node;
-		}
-	}
-
 
 private:
 	uint8_t nodeId_;
@@ -157,9 +145,8 @@ public:
 	
 	void printValues() {
 		for ( const auto &keyVal :  localKeys_) {
-			cout << localKeys_[keyVal.first] << endl; 
+			cout << "Key: " << (int) keyVal.first << "Val: " << keyVal.second << endl; 
 		}
-	
 	}
 
 private:
@@ -172,7 +159,6 @@ private:
 inline void FingerTable::prettyPrint(Node* node){
 	uint8_t predID = node->getPredecessor()->getID();
 	uint8_t succID = node->getSuccessor()->getID();
-
 	printf("----------Node ID:%d----------\n", nodeId_);
 	printf("Successor: %d Predecessor: %d\n", succID, predID);
 	printf("FingerTables:\n");
