@@ -8,7 +8,8 @@ using namespace std;
 bool betweenExclusive(uint8_t left, uint8_t right, uint8_t key){
     printf("Exclusive: L: %d, R: %d, K: %d\n", left, right, key);
     fflush(stdout);
-    if (left > right){    
+    if (left >= right){   
+    // if (left > right){     
         return ((key > left) || (key < right));
     } else if (right > left){
         return ((key > left) && (key < right));
@@ -102,7 +103,7 @@ void Node::init_finger_table(Node* node) {
 
     FingerTable_.set(1, node->findSuccessor(getStart(1)));
 
-    node->set(1, n);
+    // node->set(1, n);
 
     // Node* successor = getNode(1);
     Node* successor = FingerTable_.get(1);
@@ -162,6 +163,7 @@ void Node::update_finger_table(Node* s, uint8_t i){
 void Node::join(Node *node)
 {
     if (node) {
+        printf("ADDING NODE: %d\n", node->getID());
         init_finger_table(node); 
         update_others();
     } else {
