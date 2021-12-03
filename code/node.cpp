@@ -8,6 +8,9 @@ using namespace std;
 bool betweenExclusive(uint8_t left, uint8_t right, uint8_t key){
     printf("Exclusive: L: %d, R: %d, K: %d\n", left, right, key);
     fflush(stdout);
+    if(key == right || key == left) {
+        return false;
+    }
     if (left >= right){   
     // if (left > right){     
         return ((key > left) || (key < right));
@@ -17,9 +20,13 @@ bool betweenExclusive(uint8_t left, uint8_t right, uint8_t key){
     return false;
 }
 
+
 bool betweenLeftInclusive(uint8_t left, uint8_t right, uint8_t key){
     printf("LeftInclusive: L: %d, R: %d, K: %d\n", left, right, key);
     fflush(stdout);
+    if(key == right) {
+        return false;
+    }
     if(key == left) {
         return true;
     }
@@ -37,11 +44,20 @@ Node* Node::findSuccessor(uint8_t id) {
 }
 
 Node* Node::findPredecessor(uint8_t id) {
+    
+
+    printf("finding predecessor of %d\n", id);
     Node* nP = this;
     Node* nP_successor = nP->get(1);
     int loopCnt = 0;
 
     bool between = betweenLeftInclusive(nP->getID(), nP_successor->getID(), id);
+    if(between){
+        printf("BETWEEN!\n");
+    }
+    else{
+        printf("NOT BETWEEN!\n");
+    }
     while( !between ){
         // printf("find pred loop %d,  nP = %d\n", loopCnt, nP->getID());
         nP = nP->closestPrecedingFinger(id);
@@ -63,6 +79,7 @@ Node* Node::closestPrecedingFinger(uint8_t id) {
     for(int i=BITLENGTH; i>0; --i) {
         // cout << "CP Segfaulted Loop Cnt " << i <<endl;
         Node* finger_i_node = get(i);
+        printf("CPF finger_i_node is %d. Gotten from get(%d) from node %d\n", finger_i_node->getID(), i, this->getID());
         // printf("%d\n", n->getID());
         // fflush(stdout);
         // printf("%d\n", id);
@@ -101,8 +118,10 @@ Node* Node::getNode(uint8_t k){
 void Node::init_finger_table(Node* node) {
     Node* n = this;
 
-    FingerTable_.set(1, node->findSuccessor(getStart(1)));
-
+    uint8_t start = getStart(1);
+    printf("start(1) of %d is %d\n", n->getID(), start);
+    FingerTable_.set(1, node->findSuccessor(start));
+    printf("Successor of %d was found to be %d\n", start, node->findSuccessor(start)->getID());
     // node->set(1, n);
 
     // Node* successor = getNode(1);
@@ -110,7 +129,9 @@ void Node::init_finger_table(Node* node) {
     predecessor = successor->predecessor;
     successor->predecessor = n;
 
-    for(int i=1; i<BITLENGTH; i++){
+    printf("predecessor is %d, successor is %d\n", predecessor->getID(), successor->getID());
+
+    for(int i=1; i < BITLENGTH; i++){
         // this->prettyPrint();
         printf("INIT FINGER TABLE ITER: %d\n", i);
         Node* finger_i_node = get(i);
@@ -120,6 +141,7 @@ void Node::init_finger_table(Node* node) {
         if(betweenExclusive(n, finger_i_node->getID(), getStart(i+1))){
             printf("IF CASE\n");
             FingerTable_.set(i+1, finger_i_node);
+            printf("setting finger %d of node %d to %d\n", i+1, this->getID(), finger_i_node->getID());
         }
         else{
             printf("ELSE CASE\n");
@@ -143,14 +165,14 @@ void Node::update_others(){
 
 void Node::update_finger_table(Node* s, uint8_t i){
     Node* n = this;
-    printf("UpdateFT: Checking Node: %d, s=%d, i=%d\n", this->getID(), s->getID(), i);
+    printf("UpdateFT: Checking Node %d, s=%d, i=%d\n", this->getID(), s->getID(), i);
     fflush(stdout);
     bool between = betweenExclusive(n->getID(), getNode(i)->getID(), s->getID());
     n->prettyPrint();
     printf("checked between\n");
     fflush(stdout);
     // if(between || (n->getID() == getNode(i)->getID())){
-    if(between){
+    if(between){      
         printf("UPDATING NODE: %d finger %d with node %d\n\n", this->getID(), i, s->getID());
         fflush(stdout);
         FingerTable_.set(i, s);
@@ -163,7 +185,7 @@ void Node::update_finger_table(Node* s, uint8_t i){
 void Node::join(Node *node)
 {
     if (node) {
-        printf("ADDING NODE: %d\n", node->getID());
+        printf("ADDING NODE: %d\n", this->getID());
         init_finger_table(node); 
         update_others();
     } else {
