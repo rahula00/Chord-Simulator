@@ -145,7 +145,7 @@ public:
 	
 	void printValues() {
 		for ( const auto &keyVal :  localKeys_) {
-			cout << "Key: " << (int) keyVal.first << "Val: " << keyVal.second << endl; 
+			cout << "Key: " << (int) keyVal.first << "Val: " << (int) keyVal.second << endl; 
 		}
 	}
 
