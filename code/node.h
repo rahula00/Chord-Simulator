@@ -8,6 +8,7 @@
 #include <vector>
 #include <tuple>
 #include <iostream>
+#include <random>
 using namespace std;
 
 #define BITLENGTH 8
@@ -40,6 +41,7 @@ public:
 	uint8_t getID(){
 		return nodeId_;
 	}
+
 
 	void setID(uint8_t id){
 		nodeId_ = id;
@@ -127,7 +129,6 @@ public:
 	void setPredecessor(Node* node) {
 		predecessor = node;
 	}
-	
 	Node* RPCgetSuccessor(Node * node) {
 		return node->getSuccessor();
 	}
@@ -170,7 +171,12 @@ inline void FingerTable::prettyPrint(Node* node){
 	for(int i=1; i<BITLENGTH+1; i++){
 		uint8_t k = nodeId_ + pow(2, i-1);
 		uint8_t k2 = k + pow(2, i-1);
-		printf("| k = %d [ %d , %d )	succ. = %d |\n", i, k, k2, innerFingerTable_[i]->getID());
+		if(innerFingerTable_[i]){
+			printf("| k = %d [ %d , %d )	succ. = %d |\n", i, k, k2, innerFingerTable_[i]->getID());
+		}
+		else{
+			printf("| k = %d [ %d , %d )	succ. = ? |\n", i, k, k2);
+		}
 	}
 	printf("-----------------------------\n");
 	printf("*****************************\n");

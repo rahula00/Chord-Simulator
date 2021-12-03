@@ -14,19 +14,19 @@ int main(int argc, char * argv[]){
     Node n0(0);
     Node n1(30);
     Node n2(65);
-    Node n3(110);
-    Node n4(160);
-    Node n5(230);
+    // Node n3(110);
+    // Node n4(160);
+    // Node n5(230);
     n0.join(NULL);
     n1.join(&n0);
     n2.join(&n1);
-    n3.join(&n2);
-    n4.join(&n3);
+    // n3.join(&n2);
+    // n4.join(&n3);
     //n5.join(&n4);
     n0.prettyPrint();
     n1.prettyPrint();
     n2.prettyPrint();
-    n3.prettyPrint();
-    n4.prettyPrint();
+    // n3.prettyPrint();
+    // n4.prettyPrint();
     //n5.prettyPrint();
 }

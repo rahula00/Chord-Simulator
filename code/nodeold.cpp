@@ -67,7 +67,7 @@ Node* Node::findSuccessor(uint8_t id)
     return succ->getSuccessor();
 }
 
-Node* Node::getNode(size_t i) {
+Node* Node::getNode(uint8_t i) {
     uint8_t fingerStart = this->get(i)->getID() + pow(2, i-1);
     return findSuccessor(fingerStart);
 }
