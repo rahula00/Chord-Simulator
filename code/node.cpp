@@ -61,6 +61,7 @@ Node* Node::findPredecessor(uint8_t id) {
     while( !between ){
         // printf("find pred loop %d,  nP = %d\n", loopCnt, nP->getID());
         nP = nP->closestPrecedingFinger(id);
+        nP_successor = nP->get(1);
         loopCnt++;
         if(loopCnt > 8){
             break;
@@ -194,22 +195,29 @@ void Node::join(Node *node)
             FingerTable_.set(i, this);
         }
     }
+    auto a = transfer(node);
     FingerTable_.prettyPrint(this);
+
 }
 
 // void Node::Leave() {
 //     //to do?
 // }
 
-uint8_t Node::find(uint8_t key)
-{
+uint8_t Node::find(uint8_t key) {
 
 }
 
-void Node::insert(uint8_t key, uint8_t val)
-{
+void Node::insert(uint8_t key, uint8_t val) {
+    Node* n = this;
+    while(!betweenLeftInclusive(n->getID(), n->getSuccessor()->getID(), key)) {
+        n = n->getSuccessor();
+    }
+    n->getSuccessor()->update(key, val);
+}
 
-
+void Node::insert(uint8_t key) { 
+    insert(key, NULL);
 }
 
 void Node::remove(uint8_t key)

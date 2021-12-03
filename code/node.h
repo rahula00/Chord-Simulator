@@ -84,9 +84,12 @@ public:
 	uint8_t find(uint8_t key);
 	//TODO: implement DHT key insertion
 	void insert(uint8_t key, uint8_t value);
+	void insert(uint8_t key);
 	//TODO: implement DHT key deletion
 	void remove(uint8_t key);
-
+	void update(uint8_t key, uint8_t val) {
+		localKeys_[key] = val;
+	}
 	Node* get(size_t index) {
 		return FingerTable_.get(index);
 	}
@@ -152,7 +155,12 @@ public:
 		return toTransfer;
 	} 
 	
+	void printValues() {
+		for ( const auto &keyVal :  localKeys_) {
+			cout << localKeys_[keyVal.first] << endl; 
+		}
 	
+	}
 
 private:
 	Node* predecessor;

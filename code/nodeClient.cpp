@@ -16,8 +16,8 @@ int main(int argc, char * argv[]){
     Node n2(65);
     Node n3(110);
     Node n4(160);
-    Node n5(230);
-    Node n6(245);
+    // Node n5(230);
+    // Node n6(245);
     n0.join(NULL);
     n1.join(&n0);
     n2.join(&n1);
@@ -30,6 +30,9 @@ int main(int argc, char * argv[]){
     n2.prettyPrint();
     n3.prettyPrint();
     n4.prettyPrint();
+
+    n0.insert(3,3);
+
     // n5.prettyPrint();
     // n6.prettyPrint();
 }
