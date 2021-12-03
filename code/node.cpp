@@ -133,17 +133,23 @@ void Node::init_finger_table(Node* node) {
 void Node::update_others(){
     for(int i = 1; i <= BITLENGTH;  i++) {
         Node* n = this;
-        Node* p = findPredecessor(n->getID() - pow(2,i-1));
-        printf("P IS: %d\n\n", p->getID());
+        uint8_t findPredOfThis = (n->getID() - pow(2,i-1));
+        Node* p = findPredecessor(findPredOfThis);
+        printf("P IS: %d, predecessor of %d, on iter: %d\n\n", p->getID(), findPredOfThis, i);
         p->update_finger_table(n, i);
     }
 }
 
 void Node::update_finger_table(Node* s, uint8_t i){
     Node* n = this;
-    printf("UpdateFT: Checking Node: %d\n", this->getID());
+    printf("UpdateFT: Checking Node: %d, s=%d, i=%d\n", this->getID(), s->getID(), i);
     fflush(stdout);
-    if( betweenExclusive( n->getID(), getNode(i)->getID(), s->getID() ) ){
+    bool between = betweenExclusive(n->getID(), getNode(i)->getID(), s->getID());
+    n->prettyPrint();
+    printf("checked between\n");
+    fflush(stdout);
+    // if(between || (n->getID() == getNode(i)->getID())){
+    if(between){
         printf("UPDATING NODE: %d finger %d with node %d\n\n", this->getID(), i, s->getID());
         fflush(stdout);
         FingerTable_.set(i, s);
