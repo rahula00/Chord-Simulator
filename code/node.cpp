@@ -188,19 +188,26 @@ void Node::join(Node *node)
 uint8_t Node::find(uint8_t key) {
     auto iter = localKeys_.find(key);
     if ( iter != localKeys_.end() ) {
-        return iter->second;
+        if(iter->second){
+            return iter->second;
+        }
+        else{
+            // return none?
+            return 68;
+        }
     } 
 
     Node* n = this;
-    Node* nSave = this;
+    // uint8_t nSave = n->getID();
     while(!betweenLeftInclusive(n->getID(), n->getSuccessor()->getID(), key)) {
         n = n->getSuccessor();
-        if(n == nSave){
-            return 69;
-        }
     }
     Node* lookupNode = n->getSuccessor();
-    printf("Lookup key %d from node %d\n", key, lookupNode->getID());
+    // printf("Lookup key %d from node %d\n", key, lookupNode->getID());
+    if(lookupNode == this) {
+        // return error? 
+        return 69;
+    }
     return lookupNode->find(key);
 }
 
