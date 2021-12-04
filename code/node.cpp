@@ -159,9 +159,10 @@ void Node::join(Node *node)
         init_finger_table(node); 
         update_others();
         this->localKeys_ = this->transfer();
-        printLocalKeys();
         printf("\n\nNode %d joined. Printing new finger tables. \n", this->getID());
         printFingerTables(false);
+        printf("\n\nNode %d joined. Printing all local keys. \n", this->getID());
+        printAllLocalKeys(false);
     } else {
         predecessor = this;
         for (int i = 1; i < BITLENGTH + 1; i++){
@@ -203,7 +204,36 @@ void Node::printFingerTables(bool lowestFound){
     }
 }
 
+void Node::printAllLocalKeys(bool lowestFound){
+    
+    Node* n = this->getSuccessor();
+    Node* lowestNode = this;
+    if(lowestFound) {
+        
+        this->printLocalKeys();
+    }
+    if(n->getID() < lowestNode->getID()){
+        lowestNode = n;
+    }
+    while(this != n) {
+        if(lowestFound) {
+            n->printLocalKeys();
+        }
+        n = n->getSuccessor();
+        if(n->getID() < lowestNode->getID()){
+            lowestNode = n;
+        }
+    }
+    
+    if(!lowestFound){
+        lowestNode->printAllLocalKeys(true);
+    }
+}
+
 uint8_t Node::find(uint8_t key) {
+
+    
+
     auto iter = localKeys_.find(key);
     if ( iter != localKeys_.end() ) {
         if(iter->second != -1){
@@ -226,6 +256,8 @@ uint8_t Node::find(uint8_t key) {
         printf("\033[1;31m\tKey %d was not found.\033[0m\n", key);
         return 0;
     }
+
+    
     return lookupNode->find(key);
 }
 
@@ -237,7 +269,8 @@ void Node::insert(uint8_t key, uint8_t val) {
     Node* insertNode = n->getSuccessor();
     printf("Inserting key %d into node %d\n", key, insertNode->getID());
     insertNode->update(key, val);
-    insertNode->printLocalKeys();
+    printf("Inserted new key %d into node %d. Printing all local keys.\n", key, insertNode->getID());
+    insertNode->printAllLocalKeys(false);
 }
 
 void Node::insert(uint8_t key) { 
@@ -248,7 +281,8 @@ void Node::insert(uint8_t key) {
     Node* insertNode = n->getSuccessor();
     printf("Inserting key %d into node %d\n", key, insertNode->getID());
     insertNode->update(key, -1);
-    insertNode->printLocalKeys();
+    printf("Inserted new key %d into node %d. Printing all local keys.\n", key, insertNode->getID());
+    insertNode->printAllLocalKeys(false);
 }
 
 std::map<uint8_t, int> Node::transfer() {
@@ -257,7 +291,7 @@ std::map<uint8_t, int> Node::transfer() {
     std::map<uint8_t, int> toTransfer;
     std::map<uint8_t, int>::iterator iter;
     std::map<uint8_t, int> nSuccCopy = nSucc->localKeys_;
-    nSucc-> printLocalKeys();
+    // nSucc-> printLocalKeys();
 
     for (auto const& pair : nSucc->localKeys_) {
         // printf("IN FOR LOOP\n");
@@ -267,14 +301,20 @@ std::map<uint8_t, int> Node::transfer() {
         // printf("N id is %d, nSucc id is %d, key is %d\n",n->getID(), nSucc->getID(), key );
         fflush(stdout);
         if((key < n->getID()) && (n->getID() < nSucc->getID())){
-            // printf("going to transfer key: %d, val: %d TO node %d from node %d\n", key, val, this->getID(), nSucc->getID());
+            if(val == -1){
+                printf("migrate key %d and val None from node %d to node %d\n", key, nSucc->getID(),this->getID());
+            }
+            else{
+                printf("migrate key %d and val %d from node %d to node %d\n", key, val, nSucc->getID(),this->getID());
+            }
+            
             // fflush(stdout);
             toTransfer[key] = val;
             nSuccCopy.erase(key);
         }
     }
     nSucc->localKeys_ = nSuccCopy;
-    nSucc -> printLocalKeys();
+    // nSucc -> printLocalKeys();
     return toTransfer;
 }
 
@@ -287,17 +327,24 @@ void Node::remove(uint8_t key)
 
 void Node::printLocalKeys(){
     printf("----------Node ID:%d----------\n", id_);
+    printf("{");
     for(auto it = localKeys_.cbegin(); it != localKeys_.cend(); ++it)
         {
             if(it->second != -1){
-                printf("Key: %d, Value: %d\n", it->first, it->second);
+                printf("%d: %d", it->first, it->second);
             }
             else{
-                printf("Key: %d, Value: None\n", it->first);
+                printf("%d: None", it->first);
             }
+            it++;
+            if(it != localKeys_.cend()){
+                printf(", ");
+            }
+            it--;
         }
-    printf("-----------------------------\n");
-	printf("*****************************\n");
+    printf("}\n\n");
+    // printf("-----------------------------\n");
+	// printf("*****************************\n");
 }
 
 

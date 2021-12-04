@@ -1,5 +1,6 @@
 #!/bin/bash
 make
 clear
-./nodeClient
+./nodeClient > output.txt
+cat output.txt
 make
