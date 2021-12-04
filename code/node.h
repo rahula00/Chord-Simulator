@@ -136,7 +136,7 @@ public:
 	}
 	
 	std::map<uint8_t, int> transfer();
-	
+	void printFingerTables(bool lowestFound);
 	// void printValues() {
 	// 	for ( const auto &keyVal :  localKeys_) {
 	// 		cout << "Key: " << (int) keyVal.first << "Val: " << keyVal.second << endl; 

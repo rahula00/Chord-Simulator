@@ -74,13 +74,6 @@ Node* Node::closestPrecedingFinger(uint8_t id) {
     for(int i=BITLENGTH; i>0; --i) {
         // //cout << "CP Segfaulted Loop Cnt " << i <<endl;
         Node* finger_i_node = get(i);
-        //printf("CPF finger_i_node is %d. Gotten from get(%d) from node %d\n", finger_i_node->getID(), i, this->getID());
-        // //printf("%d\n", n->getID());
-        // fflush(stdout);
-        // //printf("%d\n", id);
-        // fflush(stdout);
-        // //printf("%d\n", finger_i_node->getID());
-        // fflush(stdout);
         if(betweenExclusive(n->getID(), id, finger_i_node->getID())){
             //cout << "CP Did not Segfault Loop: " << i << endl;
             return finger_i_node;
@@ -129,7 +122,6 @@ void Node::init_finger_table(Node* node) {
         }
         // this->prettyPrint();
     }
-
 }
 
 // update all nodes whose finger tables should refer to n
@@ -168,24 +160,48 @@ void Node::join(Node *node)
         update_others();
         this->localKeys_ = this->transfer();
         printLocalKeys();
+        printf("\n\nNode %d joined. Printing new finger tables. \n", this->getID());
+        printFingerTables(false);
     } else {
         predecessor = this;
         for (int i = 1; i < BITLENGTH + 1; i++){
             FingerTable_.set(i, this);
         }
+        printf("\n\nNode %d joined. Printing first finger table. \n", this->getID());
+        FingerTable_.prettyPrint(this);
     }
-    FingerTable_.prettyPrint(this);
+
+    
+    
     
     // printLocalKeys();
-    // printf("\n\t_________Values_________\n");
-    // printValues();
-    
-
 }
 
-// void Node::Leave() {
-//     //to do?
-// }
+void Node::printFingerTables(bool lowestFound){
+    
+    Node* n = this->getSuccessor();
+    Node* lowestNode = this;
+    if(lowestFound) {
+        
+        this->prettyPrint();
+    }
+    if(n->getID() < lowestNode->getID()){
+        lowestNode = n;
+    }
+    while(this != n) {
+        if(lowestFound) {
+            n->prettyPrint();
+        }
+        n = n->getSuccessor();
+        if(n->getID() < lowestNode->getID()){
+            lowestNode = n;
+        }
+    }
+    
+    if(!lowestFound){
+        lowestNode->printFingerTables(true);
+    }
+}
 
 uint8_t Node::find(uint8_t key) {
     auto iter = localKeys_.find(key);
@@ -241,7 +257,7 @@ std::map<uint8_t, int> Node::transfer() {
     std::map<uint8_t, int> toTransfer;
     std::map<uint8_t, int>::iterator iter;
     std::map<uint8_t, int> nSuccCopy = nSucc->localKeys_;
-    nSucc -> printLocalKeys();
+    nSucc-> printLocalKeys();
 
     for (auto const& pair : nSucc->localKeys_) {
         // printf("IN FOR LOOP\n");
