@@ -22,7 +22,7 @@ bool betweenExclusive(uint8_t left, uint8_t right, uint8_t key){
 
 
 bool betweenLeftInclusive(uint8_t left, uint8_t right, uint8_t key){
-    printf("LeftInclusive: L: %d, R: %d, K: %d\n", left, right, key);
+    // printf("LeftInclusive: L: %d, R: %d, K: %d\n", left, right, key);
     fflush(stdout);
     if(key == left) {
         return true;
@@ -172,10 +172,12 @@ void Node::join(Node *node)
             FingerTable_.set(i, this);
         }
     }
-    auto a = transfer(node);
-    printf("\n\t_________Values_________\n");
-    printValues();
     FingerTable_.prettyPrint(this);
+    auto a = transfer(node);
+    printLocalKeys();
+    // printf("\n\t_________Values_________\n");
+    // printValues();
+    
 
 }
 
@@ -184,7 +186,22 @@ void Node::join(Node *node)
 // }
 
 uint8_t Node::find(uint8_t key) {
+    auto iter = localKeys_.find(key);
+    if ( iter != localKeys_.end() ) {
+        return iter->second;
+    } 
 
+    Node* n = this;
+    Node* nSave = this;
+    while(!betweenLeftInclusive(n->getID(), n->getSuccessor()->getID(), key)) {
+        n = n->getSuccessor();
+        if(n == nSave){
+            return 69;
+        }
+    }
+    Node* lookupNode = n->getSuccessor();
+    printf("Lookup key %d from node %d\n", key, lookupNode->getID());
+    return lookupNode->find(key);
 }
 
 void Node::insert(uint8_t key, uint8_t val) {
@@ -192,7 +209,10 @@ void Node::insert(uint8_t key, uint8_t val) {
     while(!betweenLeftInclusive(n->getID(), n->getSuccessor()->getID(), key)) {
         n = n->getSuccessor();
     }
-    n->getSuccessor()->update(key, val);
+    Node* insertNode = n->getSuccessor();
+    printf("Inserting key %d into node %d\n", key, insertNode->getID());
+    insertNode->update(key, val);
+    insertNode->printLocalKeys();
 }
 
 void Node::insert(uint8_t key) { 
@@ -202,6 +222,21 @@ void Node::insert(uint8_t key) {
 void Node::remove(uint8_t key)
 {
     localKeys_.erase(key);
+}
+
+void Node::printLocalKeys(){
+    printf("----------Node ID:%d----------\n", id_);
+    for(auto it = localKeys_.cbegin(); it != localKeys_.cend(); ++it)
+        {
+            if(it->second){
+                printf("Key: %d, Value: %d\n", it->first, it->second);
+            }
+            else{
+                printf("Key: %d, Value: None\n", it->first);
+            }
+        }
+    printf("-----------------------------\n");
+	printf("*****************************\n");
 }
 
 

@@ -104,6 +104,8 @@ public:
 		FingerTable_.prettyPrint(this);
 	}
 
+	void printLocalKeys();
+
 	Node* getSuccessor() {
 		return FingerTable_.get(1);
 	}
@@ -159,7 +161,7 @@ private:
 inline void FingerTable::prettyPrint(Node* node){
 	uint8_t predID = node->getPredecessor()->getID();
 	uint8_t succID = node->getSuccessor()->getID();
-	printf("----------Node ID:%d----------\n", nodeId_);
+	printf("---------Node ID:%d---------\n", nodeId_);
 	printf("Successor: %d Predecessor: %d\n", succID, predID);
 	printf("FingerTables:\n");
 	for(int i=1; i<BITLENGTH+1; i++){

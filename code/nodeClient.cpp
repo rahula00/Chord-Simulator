@@ -25,13 +25,20 @@ int main(int argc, char * argv[]){
     n4.join(&n3);
     n5.join(&n4);
     // n6.join(&n5);
-    n0.insert(3,3);
-    n0.prettyPrint();
-    n1.prettyPrint();
-    n2.prettyPrint();
-    n3.prettyPrint();
-    n4.prettyPrint();
-    n5.prettyPrint();
+    n5.insert(3,3);
+    n4.insert(30,29);
+    n1.insert(31,28);
+    n1.insert(0,123);
+    printf("Find.. key: %d, val: %d\n", 3, n0.find(3));
+    printf("Find.. key: %d, val: %d\n", 0, n0.find(0));
+    printf("Find.. key: %d, val: %d\n", 31, n0.find(31));
+    // printf("Find.. key: %d, val: %d\n", 69, n0.find(69));
+    // n0.prettyPrint();
+    // n1.prettyPrint();
+    // n2.prettyPrint();
+    // n3.prettyPrint();
+    // n4.prettyPrint();
+    // n5.prettyPrint();
 
     
 
