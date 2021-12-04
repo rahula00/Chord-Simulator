@@ -166,6 +166,8 @@ void Node::join(Node *node)
         //printf("ADDING NODE: %d\n", this->getID());
         init_finger_table(node); 
         update_others();
+        this->localKeys_ = this->transfer();
+        printLocalKeys();
     } else {
         predecessor = this;
         for (int i = 1; i < BITLENGTH + 1; i++){
@@ -173,8 +175,8 @@ void Node::join(Node *node)
         }
     }
     FingerTable_.prettyPrint(this);
-    auto a = transfer(node);
-    printLocalKeys();
+    
+    // printLocalKeys();
     // printf("\n\t_________Values_________\n");
     // printValues();
     
@@ -188,12 +190,12 @@ void Node::join(Node *node)
 uint8_t Node::find(uint8_t key) {
     auto iter = localKeys_.find(key);
     if ( iter != localKeys_.end() ) {
-        if(iter->second){
+        if(iter->second != -1){
             return iter->second;
         }
         else{
-            // return none?
-            return 68;
+            printf("\033[1;31m\tValue of key %d is None.\033[0m\n", key);
+            return 0;
         }
     } 
 
@@ -205,8 +207,8 @@ uint8_t Node::find(uint8_t key) {
     Node* lookupNode = n->getSuccessor();
     // printf("Lookup key %d from node %d\n", key, lookupNode->getID());
     if(lookupNode == this) {
-        // return error? 
-        return 69;
+        printf("\033[1;31m\tKey %d was not found.\033[0m\n", key);
+        return 0;
     }
     return lookupNode->find(key);
 }
@@ -223,11 +225,47 @@ void Node::insert(uint8_t key, uint8_t val) {
 }
 
 void Node::insert(uint8_t key) { 
-    insert(key, NULL);
+    Node* n = this;
+    while(!betweenLeftInclusive(n->getID(), n->getSuccessor()->getID(), key)) {
+        n = n->getSuccessor();
+    }
+    Node* insertNode = n->getSuccessor();
+    printf("Inserting key %d into node %d\n", key, insertNode->getID());
+    insertNode->update(key, -1);
+    insertNode->printLocalKeys();
+}
+
+std::map<uint8_t, int> Node::transfer() {
+    Node* n = this;
+    Node* nSucc = n->get(1);
+    std::map<uint8_t, int> toTransfer;
+    std::map<uint8_t, int>::iterator iter;
+    std::map<uint8_t, int> nSuccCopy = nSucc->localKeys_;
+    nSucc -> printLocalKeys();
+
+    for (auto const& pair : nSucc->localKeys_) {
+        // printf("IN FOR LOOP\n");
+        fflush(stdout);
+        uint8_t key = pair.first;
+        int val = pair.second;
+        // printf("N id is %d, nSucc id is %d, key is %d\n",n->getID(), nSucc->getID(), key );
+        fflush(stdout);
+        if((key < n->getID()) && (n->getID() < nSucc->getID())){
+            // printf("going to transfer key: %d, val: %d TO node %d from node %d\n", key, val, this->getID(), nSucc->getID());
+            // fflush(stdout);
+            toTransfer[key] = val;
+            nSuccCopy.erase(key);
+        }
+    }
+    nSucc->localKeys_ = nSuccCopy;
+    nSucc -> printLocalKeys();
+    return toTransfer;
 }
 
 void Node::remove(uint8_t key)
 {
+    printf("Removing key %d from node %d\n", key, this->getID());
+    fflush(stdout);
     localKeys_.erase(key);
 }
 
@@ -235,7 +273,7 @@ void Node::printLocalKeys(){
     printf("----------Node ID:%d----------\n", id_);
     for(auto it = localKeys_.cbegin(); it != localKeys_.cend(); ++it)
         {
-            if(it->second){
+            if(it->second != -1){
                 printf("Key: %d, Value: %d\n", it->first, it->second);
             }
             else{

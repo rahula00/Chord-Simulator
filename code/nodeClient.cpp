@@ -17,6 +17,7 @@ int main(int argc, char * argv[]){
     Node n3(110);
     Node n4(160);
     Node n5(230);
+    Node n6(10);
     // Node n6(245);
     n0.join(NULL);
     n1.join(&n0);
@@ -25,31 +26,29 @@ int main(int argc, char * argv[]){
     n4.join(&n3);
     n5.join(&n4);
     // n6.join(&n5);
-    n5.insert(3,3);
-    n4.insert(30,3);
-    n1.insert(31,3);
-    n3.insert(65);
-    n1.insert(0,3);
-    n2.insert(0);
-    n2.insert(229);
-    n0.insert(230);
-    n0.insert(231);
-    printf("Find.. key: %d, val: %d\n", 3, n4.find(3));
-    printf("Find.. key: %d, val: %d\n", 30, n3.find(30));
-    printf("Find.. key: %d, val: %d\n", 32, n2.find(32)); 
-    printf("Find.. key: %d, val: %d\n", 32, n1.find(32)); 
-    printf("Find.. key: %d, val: %d\n", 32, n0.find(32)); 
-    printf("Find.. key: %d, val: %d\n", 32, n4.find(32)); 
-    printf("Find.. key: %d, val: %d\n", 232, n1.find(232)); 
-    printf("Find.. key: %d, val: %d\n", 235, n1.find(235)); 
-    printf("Find.. key: %d, val: %d\n", 230, n1.find(230)); 
-    printf("Find.. key: %d, val: %d\n", 231, n1.find(231)); 
-    // n0.prettyPrint();
-    // n1.prettyPrint();
-    // n2.prettyPrint();
-    // n3.prettyPrint();
-    // n4.prettyPrint();
-    // n5.prettyPrint();
+    n0.insert(1);
+    n0.insert(2);
+    n0.insert(3);
+    n0.insert(4);
+    n0.insert(5);
+    n6.join(&n0);
+
+    // printf("Find.. key: %d, val: %d\n", 3, n4.find(3));
+    // printf("Find.. key: %d, val: %d\n", 30, n3.find(30));
+    // printf("Find.. key: %d, val: %d\n", 32, n2.find(32)); 
+    // printf("Find.. key: %d, val: %d\n", 32, n1.find(32)); 
+    // printf("Find.. key: %d, val: %d\n", 32, n0.find(32)); 
+    // printf("Find.. key: %d, val: %d\n", 32, n4.find(32)); 
+    // printf("Find.. key: %d, val: %d\n", 232, n1.find(232)); 
+    // printf("Find.. key: %d, val: %d\n", 235, n1.find(235)); 
+    // printf("Find.. key: %d, val: %d\n", 230, n1.find(230)); 
+    // printf("Find.. key: %d, val: %d\n", 300, n1.find(300)); 
+    n0.prettyPrint();
+    n1.prettyPrint();
+    n2.prettyPrint();
+    n3.prettyPrint();
+    n4.prettyPrint();
+    n5.prettyPrint();
 
     
 

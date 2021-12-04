@@ -75,7 +75,7 @@ public:
 	void insert(uint8_t key);
 	//TODO: implement DHT key deletion
 	void remove(uint8_t key);
-	void update(uint8_t key, uint8_t val) {
+	void update(uint8_t key, int val) {
 		localKeys_[key] = val;
 	}
 	Node* get(size_t index) {
@@ -134,28 +134,20 @@ public:
 	uint8_t RPCgetID(Node* node) {
 		return node->getID();
 	}
-	std::map<uint8_t, uint8_t> transfer(Node* node) {
-		std::map<uint8_t, uint8_t> toTransfer;
-		Node* P = findPredecessor(getID());
-		for ( const auto &keyVal :  localKeys_) {
-			if (keyVal.first - node->id_ > keyVal.first - getID()) {
-				toTransfer[keyVal.first] = keyVal.second;
-			}
-		}
-		return toTransfer;
-	} 
 	
-	void printValues() {
-		for ( const auto &keyVal :  localKeys_) {
-			cout << "Key: " << (int) keyVal.first << "Val: " << (int) keyVal.second << endl; 
-		}
-	}
+	std::map<uint8_t, int> transfer();
+	
+	// void printValues() {
+	// 	for ( const auto &keyVal :  localKeys_) {
+	// 		cout << "Key: " << (int) keyVal.first << "Val: " << keyVal.second << endl; 
+	// 	}
+	// }
 
 private:
 	Node* predecessor;
 	uint8_t id_;
 	FingerTable FingerTable_;
-	std::map<uint8_t, uint8_t> localKeys_;
+	std::map<uint8_t, int> localKeys_;
 };
 
 inline void FingerTable::prettyPrint(Node* node){
