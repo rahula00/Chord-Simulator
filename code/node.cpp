@@ -230,16 +230,26 @@ void Node::printAllLocalKeys(bool lowestFound){
     }
 }
 
-uint8_t Node::find(uint8_t key) {
+// DEFAULT VALUE OF pred is NULL
+uint8_t Node::find(uint8_t key, Node* pred) {
 
+    if(pred == NULL){
+        printf("Look-up result of key %d from node %d with path [%d", key, this->getID(), this->getID());
+    }
+    else{
+        printf(",%d", this->getID());
+    }
+    // printf("Look-up result of key %d from node %d with path [");
     
 
     auto iter = localKeys_.find(key);
     if ( iter != localKeys_.end() ) {
         if(iter->second != -1){
+            printf("] value is %d\n", iter->second);
             return iter->second;
         }
         else{
+            printf("] value is None\n");
             printf("\033[1;31m\tValue of key %d is None.\033[0m\n", key);
             return 0;
         }
@@ -253,12 +263,13 @@ uint8_t Node::find(uint8_t key) {
     Node* lookupNode = n->getSuccessor();
     // printf("Lookup key %d from node %d\n", key, lookupNode->getID());
     if(lookupNode == this) {
+        printf("] key was not found\n");
         printf("\033[1;31m\tKey %d was not found.\033[0m\n", key);
         return 0;
     }
 
     
-    return lookupNode->find(key);
+    return lookupNode->find(key, this);
 }
 
 void Node::insert(uint8_t key, uint8_t val) {

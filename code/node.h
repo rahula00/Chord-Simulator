@@ -69,7 +69,7 @@ public:
 	 */
 	void join(Node* node);
 	//TODO: implement DHT lookup
-	uint8_t find(uint8_t key);
+	uint8_t find(uint8_t key,Node* pred = NULL);
 	//TODO: implement DHT key insertion
 	void insert(uint8_t key, uint8_t value);
 	void insert(uint8_t key);
